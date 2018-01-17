@@ -1,0 +1,10 @@
+<div class="nav">
+  <div class="ui tabular fixed menu nav-links">
+    <%= link_to "Amandine Latour", root_path, id: "logo" %>
+    <%= link_to "Home", root_path, class: "item right nav #{"active" if @page_name == "home"}" %>
+    <%= link_to "Resume", static_pages_resume_path, class: "item nav #{"active" if @page_name == "resume"}" %>
+    <%= link_to "Portfolio", static_pages_portfolio_path, class: "item nav #{"active" if @page_name == "portfolio"}" %>
+    <%= link_to "About", static_pages_about_path, class: "item nav #{"active" if @page_name == "about"}" %>
+  </div>
+
+</div>

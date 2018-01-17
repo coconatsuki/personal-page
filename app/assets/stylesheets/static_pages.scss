@@ -1,0 +1,127 @@
+// ----------------------------- general -------------------------------------\\
+
+.ui.container.main {
+  margin-top: 55px;
+  background: #fff8f0;
+  height: 650px;
+}
+
+.big-icon {
+  height: 30px;
+  width: 30px;
+  display: block;
+  background-size: contain !important;
+}
+
+// ----------------------------- nav -------------------------------------\\
+
+.ui.tabular.menu.nav-links {
+  padding: 0 30px;
+  background-color: #9e2b25;
+  color: white;
+  border-color: #fff8f0;
+  height: 10px;
+}
+
+.ui.tabular.menu .item.nav {
+  color: white;
+  &:hover {
+    background-color: #6E1E1B;
+    color: #f5f8de;
+  }
+}
+
+.ui.tabular.menu .active.item.nav {
+  color: black;
+  &:hover {
+    background-color: #f5f8de;
+    color: #6E1E1B;
+  }
+}
+
+#logo {
+  color: white;
+  font-size: 23px;
+  line-height: 39px;
+  padding: 0 10px;
+  &:hover {
+    background-color: #6E1E1B;
+    color: #f5f8de;
+  }
+}
+
+// ----------------------------- Home header -------------------------------------\\
+
+.home-header {
+  display: flex;
+  height: 450px;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.profile, .salutation, .short-presentation {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  }
+
+  .salutation .hi {
+    font-size: 70px;
+    font-family: 'Joti One', cursive, georgia, serif;
+    margin: 40% auto 0 auto;
+  }
+
+  .ui.circular.segment.image, .header-name, .header-links {
+    margin: 0 auto;
+  }
+
+.ui.circular.segment.image {
+    border-color: #9e2b25;
+}
+
+.header-name {
+  font-size: 23px;
+  margin-top: 15px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 8px;
+  padding: 0;
+  width: 200px;
+}
+
+.header-links li, .header-links a {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#github {
+  background: url(github-plus.png) no-repeat;
+}
+
+#linkedin {
+  background: url(linkedin.png) no-repeat;
+}
+
+#wordpress {
+  background: url(wordpress.png) no-repeat;
+}
+
+
+//------------------------------- portfolio ---------------------------------\\
+
+.ui.cards.grid {
+  margin: 0 50px;
+}
+
+.portfolio-page {
+  padding: 50px 0;
+}
+
+.portfolio.title {
+
+}
