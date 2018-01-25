@@ -7,10 +7,8 @@ $(function() {
     $('#' + $(this).data('modal')).modal('show');
   });
 
-
-
-
-
+  $('.ui.accordion')
+    .accordion({exclusive: false});
 
 
 

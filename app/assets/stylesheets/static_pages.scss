@@ -1,9 +1,13 @@
 // ----------------------------- general -------------------------------------\\
+body {
+
+}
 
 .ui.container.main {
-  margin-top: 55px;
-  background: #fff8f0;
-  height: 650px;
+  margin: 55px 0;
+  width: 80%;
+  border-radius: 5px;
+  background-color: #F2F1F1;
 }
 
 .big-icon {
@@ -13,62 +17,87 @@
   background-size: contain !important;
 }
 
+.title {
+  color: #732034;
+}
+
 // ----------------------------- nav -------------------------------------\\
+
+.hi.title {
+  text-align: center;
+}
 
 .ui.tabular.menu.nav-links {
   padding: 0 30px;
-  background-color: #9e2b25;
+  background-color: #732034;
   color: white;
   border-color: #fff8f0;
   height: 10px;
 }
 
-.ui.tabular.menu .item.nav {
+.ui.tabular.menu .item.nav, #logo {
   color: white;
   &:hover {
-    background-color: #6E1E1B;
-    color: #f5f8de;
+    background-color: #561827;
+    color: #F2F1F1;
   }
 }
 
 .ui.tabular.menu .active.item.nav {
   color: black;
   &:hover {
-    background-color: #f5f8de;
+    background-color: #F2F1F1;
     color: #6E1E1B;
   }
 }
 
 #logo {
-  color: white;
   font-size: 23px;
   line-height: 39px;
   padding: 0 10px;
+}
+
+//-------------------------------  Footer --------------------------------------\\
+
+.ui.vertical.footer.segment {
+  background-color: #732034;
+}
+
+.ui.inverted.link.list .item.footer-link, #fourmi {
+  color: #cdafb6;
   &:hover {
-    background-color: #6E1E1B;
-    color: #f5f8de;
+    color: white;
   }
+}
+
+.blog {
+  color: white;
 }
 
 // ----------------------------- Home header -------------------------------------\\
 
-.home-header {
-  display: flex;
+.home-header.ui.three.column.grid {
   height: 450px;
-  justify-content: space-around;
   margin-top: 30px;
+  padding: 50px;
 }
 
-.profile, .salutation, .short-presentation {
-  display: flex;
-  flex-direction: column;
+.profile.column, .salutation.column, .short-presentation.column {
   width: 300px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-around;
   }
 
   .salutation .hi {
     font-size: 70px;
     font-family: 'Joti One', cursive, georgia, serif;
-    margin: 40% auto 0 auto;
+    width: 130px;
+    margin: 0 auto;
+  }
+
+  .salutation.column {
+    justify-content: space-around;
   }
 
   .ui.circular.segment.image, .header-name, .header-links {
@@ -111,17 +140,84 @@
   background: url(wordpress.png) no-repeat;
 }
 
+.presentation-text {
+  margin-top: 50px;
 
-//------------------------------- portfolio ---------------------------------\\
+}
+
+.presentation-text, .introduction {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    p {
+      line-height: 22px;
+    }
+}
+
+
+//------------------------------- Home - news feed --------------------------\\
+
+.ui.column.grid.one.news-column {
+  margin-top: 40px;
+}
+
+#news-row {
+  justify-content: space-around;
+}
+
+.item.news-items .content.news-content, .item.news-items .header {
+  line-height: 24px !important;
+}
+
+
+.news {
+  text-align: center;
+}
+
+
+//------------------------------- portfolio page -----------------------------\\
 
 .ui.cards.grid {
   margin: 0 50px;
 }
 
 .portfolio-page {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .portfolio.title {
+  width: 200px;
+  margin: 0 auto 30px auto;
+  font-size: 40px;
+}
 
+// ------------------------------Resume page --------------------------------\\
+
+.resume-page {
+  padding: 20px 50px;
+}
+
+.column.resume-column {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-title, .resume-subtitle {
+  text-align: center;
+}
+
+.level {
+  font-weight: 400;
+  font-size: initial;
+}
+
+#portfolio-link, #github-link {
+  text-align: center;
+}
+
+// ----------------------------- Contact page --------------------------------\\
+
+.contact-page {
+
+  height: 1000px;
 }

@@ -1,35 +1,61 @@
 <main>
-  <div class="home-header">
-    <section class="salutation">
-      <p class="hi">Hi !</p>
-    </section>
-    <section class="profile">
-      <div class="profile-photo">
-         <%= image_tag("profil.jpg", class: "ui segment medium circular image") %>
-      </div>
-      <h5 class="header-name">Amandine Latour</h5>
-      <ul class="header-links">
-        <li><a href="https://github.com/"><i class="big-icon" id="github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/amandine-latour-9750b512a/"><i class="big-icon" id="linkedin"></i></a></li>
-        <li><a href="https://unefourmiatokyo.com/"><i class="big-icon" id="wordpress"></i></a></li>
-      </ul>
-    </section>
-    <section class="short-presentation">
-      <p class="presentation-text">
-        I'm quite new in the developers word
-        (before, I've been working as a journalist and french teacher).
-        I've been studying programming for 1 year now,
-        especially Ruby on Rails and Javascript,
-        and I'm nearly over the online bootcamp I've been studying with so far
-        ('The Odin Project' -> https://www.theodinproject.com/).
-        I'm also in love with the 'codeschool' programming lessons
-        (https://www.codeschool.com/). Now, since the beginning of this year,
-        I'm looking for a job as a web developper.
-        Here is my Github account :visage_légèrement_souriant: -> https://github.com/coconatsuki
-      </p>
-    </section>
+  <div class="home-header ui three column grid">
+    <div class="row">
+      <section class="salutation column">
+        <div class="ui tall stacked segment salutationcol">
+          <p class="hi title">Hi!</p>
+          <p class="introduction">I'm Amandine.</p>
+          <p class="introduction">I'm a programmer (front & back-end) and a former journalist, translator and french teacher.</p>
+        </div>
+      </section>
+      <section class="profile column">
+        <div class="profile-photo">
+           <%= image_tag("profil.jpg", class: "ui segment medium circular image") %>
+        </div>
+        <h5 class="header-name title">Amandine Latour</h5>
+        <ul class="header-links">
+          <li><a href="https://github.com/"><i class="big-icon" id="github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/amandine-latour-9750b512a/"><i class="big-icon" id="linkedin"></i></a></li>
+          <li><a href="https://unefourmiatokyo.com/"><i class="big-icon" id="wordpress"></i></a></li>
+        </ul>
+      </section>
+      <section class="short-presentation column">
+        <div class="presentation-text ui tall stacked segment">
+          <p></p>
+          <p>I'm now looking for a job as a web developer. If interested, send me a mail!</p>
+          <p>You can have a look at my projects in the Portfolio.</p>
+          <p>Thanks</p>
+        </div>
+      </section>
+    </div>
   </div>
-</main>
-<section>
+  <div class="ui one column grid news-column">
+    <div class="row"  id="news-row">
+      <section class="ui piled segment">
+        <h3 class="news">News</h3>
 
-</section>
+        <div class="ui celled list">
+          <div class="item news-items">
+              <div class="content news-content">
+              <div class="header">16 january 2018</div>
+              I attended the last Montreal.rb meetup. It was my first time there !
+            </div>
+          </div>
+          <div class="item news-items">
+            <div class="content news-content">
+              <div class="header">05 january 2018</div>
+              I just began looking for a job ~~ ! Wish me good luck.
+            </div>
+          </div>
+          <div class="item news-items">
+              <div class="content news-content">
+              <div class="header">December 2017</div>
+              I finished my reproduction of the New York Times page in HTML/CSS.
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+</div>
+</main>
