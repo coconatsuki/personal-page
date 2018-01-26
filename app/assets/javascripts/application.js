@@ -12,7 +12,7 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require jquery/dist/jquery
+//= require jquery
 // Loads all Semantic javascripts
 //= require semantic-ui
 //= require_tree .
