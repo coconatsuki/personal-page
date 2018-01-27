@@ -20,6 +20,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'therubyracer', platforms: :ruby
 #to install Yarn (which install jquery)
 gem 'webpacker'
+# Job runner
+gem 'sidekiq'
+# to cache env variables
+gem 'figaro'
+# timeout
+gem 'rack-timeout'
 
 
 # Use CoffeeScript for .coffee assets and views
