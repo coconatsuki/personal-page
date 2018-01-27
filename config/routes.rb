@@ -2,14 +2,16 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
-  get 'static_pages/home'
+  get 'home', to: 'static_pages#home'
 
-  get 'static_pages/portfolio'
+  get 'portfolio', to: 'static_pages#portfolio'
 
-  get 'static_pages/about'
+  get 'about', to: 'static_pages#about'
 
-  get 'static_pages/contact'
+  get 'contact', to: 'static_pages#contact'
 
-  get 'static_pages/resume'
+  get 'resume', to: 'static_pages#resume'
+
+  post 'contact_create', to: 'static_pages#contact_create'
 
 end

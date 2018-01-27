@@ -1,4 +1,4 @@
-$(function() {
+$(document).on('turbolinks:load', function() {
   $('.special.cards .image.dimmable').dimmer({
     on: 'hover'
   });

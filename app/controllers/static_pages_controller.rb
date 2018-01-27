@@ -18,4 +18,8 @@ class StaticPagesController < ApplicationController
   def contact
     @page_name = "contact"
   end
+
+  def contact_create
+
+  end
 end

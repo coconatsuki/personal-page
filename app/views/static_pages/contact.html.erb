@@ -1,7 +1,32 @@
-<main class="contact-page">
+<div class="ui segment contact-page">
+  <%= form_for(:contact, url: contact_create_path, html: {class: "ui form"}) do |f| %>
 
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+    <div class="required field">
+      <label>Name</label>
+      <div class="two fields">
+        <div class="field">
+          <%= f.text_field :firstname, placeholder: "First Name" %>
+        </div>
+        <div class="field">
+          <%= f.text_field :lastname, placeholder: "Last Name" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="required field">
+      <label>Email</label>
+      <div class="field">
+        <%= f.email_field :email, placeholder: "Email address" %>
+      </div>
+    </div>
+
+    <div class="required field">
+      <label>Message</label>
+      <%= f.text_area :message, rows: 6 %>
+    </div>
+
+     <%= f.submit "Send message", class: "ui submit button fluid positive"  %>
 
 
-</main>
+  <% end %>
+</div>
