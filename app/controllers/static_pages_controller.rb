@@ -20,9 +20,14 @@ class StaticPagesController < ApplicationController
   end
 
   def contact_create
-    ContactMailer.contact_mail(contact_params[:firstname], contact_params[:lastname], contact_params[:email], contact_params[:message]).deliver_now
-    flash[:notice] = "Message sent!"
-    redirect_to contact_path
+    if contact_params[:firstname].blank? || contact_params[:lastname].blank? || contact_params[:email].blank? || contact_params[:message].blank?
+      flash[:warning] = "Please fill all the fields before sending a message."
+      redirect_to contact_path
+    else
+      ContactMailer.contact_mail(contact_params[:firstname], contact_params[:lastname], contact_params[:email], contact_params[:message]).deliver_now
+      flash[:notice] = "Message sent!"
+      redirect_to contact_path
+    end
   end
 
   private
