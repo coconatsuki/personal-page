@@ -1,16 +1,77 @@
-// ----------------------------- general -------------------------------------\\
-body {
-  height: 100%;
+$fushia: #732034;
+
+@mixin box-shadow() {
+  -webkit-box-shadow: 7px 7px 35px -9px rgba(0,0,0,0.52);
+  -moz-box-shadow: 7px 7px 35px -9px rgba(0,0,0,0.52);
+  box-shadow: 7px 7px 35px -9px rgba(0,0,0,0.52);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin joti-font {
+  font-family: 'Joti One', cursive, georgia, serif;
+}
+
+// -------------------------Useful shortcuts -------------------------------\\
+
+.flex {
   display: flex;
+}
+
+.flex-column {
   flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between  {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.lato-font {
+  font-family: 'Lato', "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+}
+
+.crimson-font {
+  font-family: 'Crimson Text', georgia, serif !important;
+}
+
+
+
+// ----------------------------- general -------------------------------------\\
+body {
+  height: 100%;
+}
+
 .ui.container.main {
-  margin: 55px 0;
-  width: 80%;
-  border-radius: 5px;
-  background-color: #F2F1F1;
+  margin: 3.5% 0;
+  width: 85%;
+  @include border-radius(5px);
+  background-color: rgba(186, 201, 136, 0.45);
+}
+
+.page-container {
+  padding: 3% 3%;
+  margin-top: 8%
 }
 
 .big-icon {
@@ -21,21 +82,31 @@ body {
 }
 
 .title {
-  color: #732034;
+  color: $fushia;
+  font-family: 'Crimson Text', georgia, serif;
+}
+
+.subtitles {
+  font-size: 2em !important;
+  font-family: 'Crimson Text', georgia, serif !important;
+}
+
+p {
+  font-family: 'Lato', "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 // ----------------------------- nav -------------------------------------\\
 
-.hi.title {
-  text-align: center;
+.nav {
+  display: flex;
 }
 
 .ui.tabular.menu.nav-links {
-  padding: 0 30px;
-  background-color: #732034;
+  padding: 0 2%;
+  background-color: $fushia;
   color: white;
   border-color: #fff8f0;
-  height: 10px;
+  height: 10%;
 }
 
 .ui.tabular.menu .item.nav, #logo {
@@ -55,15 +126,30 @@ body {
 }
 
 #logo {
-  font-size: 23px;
-  line-height: 39px;
-  padding: 0 10px;
+  font-size: 1.6em;
+}
+
+.ui.dropdown.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .ui.dropdown.mobile-nav {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
 }
 
 //-------------------------------  Footer --------------------------------------\\
 
+.footer-header {
+   font-size: 1.4em !important;
+ }
+
 .ui.vertical.footer.segment {
-  background-color: #732034;
+  background-color: $fushia;
 }
 
 .ui.inverted.link.list .item.footer-link, #fourmi {
@@ -80,55 +166,49 @@ body {
 // ----------------------------- Home header -------------------------------------\\
 
 .home-header.ui.three.column.grid {
-  height: 450px;
-  margin-top: 30px;
-  padding: 50px;
+  padding: 2%;
 }
 
 .profile.column, .salutation.column, .short-presentation.column {
-  width: 300px;
   display: flex !important;
-  flex-direction: column;
-  justify-content: space-around;
   }
 
-  .salutation .hi {
-    font-size: 70px;
-    font-family: 'Joti One', cursive, georgia, serif;
-    width: 130px;
-    margin: 0 auto;
+.salutation .hi {
+    font-size: 4.5em;
+    @include joti-font;
+    margin: 0;
   }
+
+.joti-font {
+  font-size: 2.5em;
+  @include joti-font;
+}
 
   .salutation.column {
     justify-content: space-around;
-  }
-
-  .ui.circular.segment.image, .header-name, .header-links {
-    margin: 0 auto;
+    .salutationcol {
+      @include box-shadow;
+    }
   }
 
 .ui.circular.segment.image {
     border-color: #9e2b25;
+    @include box-shadow;
 }
 
-.header-name {
-  font-size: 23px;
-  margin-top: 15px;
+.photo-caption {
+  .header-name.title {
+    font-size: 2.5em;
+    margin-top: 5%;
+  }
 }
 
 .header-links {
-  display: flex;
-  justify-content: space-evenly;
+  align-self: center;
   list-style: none;
-  margin-top: 8px;
+  margin-top: 2%;
   padding: 0;
-  width: 200px;
-}
-
-.header-links li, .header-links a {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
+  width: 85%;
 }
 
 #github {
@@ -143,49 +223,61 @@ body {
   background: url(wordpress.png) no-repeat;
 }
 
-.presentation-text {
-  margin-top: 50px;
-
+.short-presentation .presentation-text.ui.tall.stacked.segment {
+  @include box-shadow;
 }
 
-.presentation-text, .introduction {
-    font-size: 14px;
+.presentation-text.ui.segment.tall {
+  padding: 5% 3%;
+}
+
+.presentation-text.ui.segment.tall p, .introduction {
     font-weight: bold;
-    text-align: center;
-    p {
-      line-height: 22px;
-    }
+    line-height: 1.7em;
 }
 
+@media screen and (max-width: 1050px) {
+  .salutation .hi {
+    font-size: 3em;
+  }
+  .joti-font {
+    font-size: 2em;
+  }
+  .photo-caption .header-name.title {
+    font-size: 2.3em;
+  }
+  .ui.tabular.menu.nav-links {
+    height: inherit;
+  }
+}
 
+@media screen and (max-width: 400px) {
+  #logo {
+
+  }
+}
 //------------------------------- Home - news feed --------------------------\\
 
-.ui.column.grid.one.news-column {
-  margin-top: 40px;
-}
-
-#news-row {
+.ui.column.grid.one.news-column #news-row {
   justify-content: space-around;
+  .news-container {
+    @include box-shadow;
+  }
 }
 
 .item.news-items .content.news-content, .item.news-items .header {
-  line-height: 24px !important;
+  line-height: 1.8em !important;
 }
 
-
-.news {
-  text-align: center;
+.news-container .ui.celled.list .item.news-items {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
-
 
 //------------------------------- portfolio page -----------------------------\\
 
 .ui.cards.grid {
   margin: 0 50px;
-}
-
-.portfolio-page {
-  padding: 30px 0;
 }
 
 .portfolio.title {
@@ -196,21 +288,23 @@ body {
 
 // ------------------------------Resume page --------------------------------\\
 
-.resume-page {
-  padding: 20px 50px;
-}
-
 .column.resume-column {
   display: flex;
   justify-content: center;
 }
 
 .resume-title {
-  text-align: center;
+  padding-bottom: 2%;
+  font-size: 40px;
+}
+
+.ui.horizontal.divider {
+  margin: 3%;
 }
 
 .ui.top.attached.header.resume-subtitle {
-  font-size: 2em;
+  font-size: 2.2em;
+  text-align: center;
 }
 
 .level {
@@ -218,21 +312,52 @@ body {
   font-size: initial;
 }
 
-#portfolio-link, #github-link {
-  text-align: center;
+.subtitles {
+  margin: 8%;
 }
+
 
 
 //------------------------------- About page ---------------------------------\\
 
-.ui.segment.about-page {
-  width: 800px;
+.about-container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
+.ui.segment.about-page {
+  width: 800px;
+  padding: 30px;
+}
 
 // ----------------------------- Contact page --------------------------------\\
 
 .ui.segment.contact-page {
   margin: 0 auto;
   width: 700px;
+}
+
+.contact-header {
+  h1 {
+  margin: 0;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+.contact-form {
+  margin-top: 2%;
+  width: 60%;
+}
+
+.ui.form .contact-form .field label {
+  font-size: 1.2em;
+  padding: 2% 0;
+}
+
+.ui.form .contact-form .contact-submit {
+  width: 60%;
+  margin-top: 2%;
+  align-self: center;
 }

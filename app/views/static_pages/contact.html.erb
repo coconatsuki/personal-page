@@ -1,32 +1,40 @@
+<main class="page-container"
 <div class="ui segment contact-page">
-  <%= form_for(:contact, url: contact_create_path, html: {class: "ui form"}) do |f| %>
+  <header class="flex flex-column text-center contact-header">
+    <h1 class="crimson-font">You have a question? A job offer for me?</h1>
+    <h3 class="crimson-font">Please send me a message and I'll answer quickly.</h1>
+    </header>
 
-    <div class="required field">
-      <label>Name</label>
-      <div class="two fields">
-        <div class="field">
-          <%= f.text_field :firstname, placeholder: "First Name" %>
-        </div>
-        <div class="field">
-          <%= f.text_field :lastname, placeholder: "Last Name" %>
+    <%= form_for(:contact, url: contact_create_path, html: {class: "ui form flex justify-center"}) do |f| %>
+    <div class="flex flex-column contact-form">
+
+      <div class="required field">
+        <label>Name</label>
+        <div class="two fields">
+          <div class="field">
+            <%= f.text_field :firstname, placeholder: "First Name" %>
+          </div>
+          <div class="field">
+            <%= f.text_field :lastname, placeholder: "Last Name" %>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="required field">
-      <label>Email</label>
-      <div class="field">
-        <%= f.email_field :email, placeholder: "Email address" %>
+      <div class="required field">
+        <label>Email</label>
+        <div class="field">
+          <%= f.email_field :email, placeholder: "Email address" %>
+        </div>
       </div>
+
+      <div class="required field">
+        <label>Message</label>
+        <%= f.text_area :message, rows: 6 %>
+      </div>
+
+      <%= f.submit "Send message", class: "ui submit button fluid positive contact-submit"  %>
+      <% end %>
+
     </div>
-
-    <div class="required field">
-      <label>Message</label>
-      <%= f.text_area :message, rows: 6 %>
-    </div>
-
-     <%= f.submit "Send message", class: "ui submit button fluid positive"  %>
-
-
-  <% end %>
-</div>
+  </div>
+</main>

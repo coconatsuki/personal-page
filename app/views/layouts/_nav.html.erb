@@ -1,5 +1,5 @@
 <div class="nav">
-  <div class="ui tabular fixed menu nav-links">
+  <div class="ui tabular fixed stackable menu nav-links align-center">
     <%= link_to "Amandine Latour", root_path, id: "logo" %>
     <%= link_to "Home", root_path, class: "item right nav #{"active" if @page_name == "home"}" %>
     <%= link_to "Resume", resume_path, class: "item nav #{"active" if @page_name == "resume"}" %>
@@ -7,5 +7,18 @@
     <%= link_to "About", about_path, class: "item nav #{"active" if @page_name == "about"}" %>
     <%= link_to "Contact", contact_path, class: "item nav #{"active" if @page_name == "contact"}" %>
   </div>
+</div>
 
+<div class="ui dropdown mobile-nav">
+  <div class="text">MENU</div>
+  <i class="dropdown icon"></i>
+    <div class="ui tabular fixed stackable menu nav-links align-center">
+      <%= link_to "Amandine Latour", root_path, id: "logo" %>
+      <%= link_to "Home", root_path, class: "item right nav #{"active" if @page_name == "home"}" %>
+      <%= link_to "Resume", resume_path, class: "item nav #{"active" if @page_name == "resume"}" %>
+      <%= link_to "Portfolio", portfolio_path, class: "item nav #{"active" if @page_name == "portfolio"}" %>
+      <%= link_to "About", about_path, class: "item nav #{"active" if @page_name == "about"}" %>
+      <%= link_to "Contact", contact_path, class: "item nav #{"active" if @page_name == "contact"}" %>
+    </div>
+  </div>
 </div>

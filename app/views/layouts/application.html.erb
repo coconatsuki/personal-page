@@ -6,7 +6,7 @@
 
   <body>
     <%= render 'layouts/nav' %>
-    <div class="ui container main">
+    <div class="ui container main flex flex-column flex-between all-pages-container">
       <% flash.each do |message_type, message| %>
           <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>

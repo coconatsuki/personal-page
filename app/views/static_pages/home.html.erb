@@ -1,40 +1,48 @@
-<main>
-  <div class="home-header ui three column grid">
+<main class="page-container">
+  <div class="home-header ui stackable three column grid">
     <div class="row">
-      <section class="salutation column">
+      <section class="salutation column flex flex-column justify-around">
         <div class="ui tall stacked segment salutationcol">
-          <p class="hi title">Hi!</p>
-          <p class="introduction">I'm Amandine.</p>
-          <p class="introduction">I'm a programmer (front & back-end) and a former journalist, translator and french teacher.</p>
+          <p class="hi title text-center">Hi!</p>
+          <p class="introduction text-center">I'm Amandine.</p>
+          <p class="introduction text-center">I'm a programmer (front & back-end) and a former journalist, translator and french teacher.</p>
         </div>
       </section>
-      <section class="profile column">
+      <section class="profile column flex flex-column justify-around align-center">
         <div class="profile-photo">
            <%= image_tag("profil.jpg", class: "ui segment medium circular image") %>
         </div>
-        <h5 class="header-name title">Amandine Latour</h5>
-        <ul class="header-links">
-          <li><a href="https://github.com/"><i class="big-icon" id="github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/amandine-latour-9750b512a/"><i class="big-icon" id="linkedin"></i></a></li>
-          <li><a href="https://unefourmiatokyo.com/"><i class="big-icon" id="wordpress"></i></a></li>
-        </ul>
+        <div class="photo-caption flex flex-column">
+          <h1 class="header-name title">Amandine Latour</h1>
+          <ul class="header-links flex justify-around">
+            <li><a href="https://github.com/"><i class="big-icon" id="github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/amandine-latour-9750b512a/"><i class="big-icon" id="linkedin"></i></a></li>
+            <li><a href="https://unefourmiatokyo.com/"><i class="big-icon" id="wordpress"></i></a></li>
+          </ul>
+        </div>
       </section>
-      <section class="short-presentation column">
-        <div class="presentation-text ui tall stacked segment">
+      <section class="short-presentation column flex flex-column justify-around">
+        <div class="presentation-text ui tall stacked segment text-center">
           <p></p>
-          <p>I'm now looking for a job as a web developer. If interested, send me a mail!</p>
-          <p>You can have a look at my projects in the Portfolio.</p>
-          <p>Thanks</p>
+          <p>I'm now looking for a job as a web developer. <br />If interested, send me a mail!</p>
+          <p>You can also have a look at my projects in the Portfolio.</p>
+          <p class="joti-font title">Thanks !</p>
         </div>
       </section>
     </div>
   </div>
   <div class="ui one column grid news-column">
-    <div class="row"  id="news-row">
-      <section class="ui piled segment">
-        <h3 class="news">News</h3>
+    <div class="row flex justify-around"  id="news-row">
+      <section class="ui piled segment news-container">
+        <h3 class="news text-center">News</h3>
 
         <div class="ui celled list">
+          <div class="item news-items">
+              <div class="content news-content">
+              <div class="header">26 february 2018</div>
+                I'm working on making this website responsive.
+            </div>
+          </div>
           <div class="item news-items">
               <div class="content news-content">
               <div class="header">16 january 2018</div>
