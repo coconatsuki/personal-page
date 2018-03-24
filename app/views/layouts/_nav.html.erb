@@ -9,11 +9,13 @@
   </div>
 </div>
 
-<div class="ui dropdown mobile-nav">
-  <div class="text">MENU</div>
-  <i class="dropdown icon"></i>
-    <div class="ui tabular fixed stackable menu nav-links align-center">
-      <%= link_to "Amandine Latour", root_path, id: "logo" %>
+<div class="ui fixed stackable menu colored-nav mobile-nav" id="mobile-nav">
+  <%= link_to "Amandine Latour", root_path, id: "logo" %>
+<div class="ui dropdown">
+  <div class="text">
+    MENU
+    <i class="dropdown icon"></i></div>
+    <div class="ui menu nav-links align-center colored-nav">
       <%= link_to "Home", root_path, class: "item right nav #{"active" if @page_name == "home"}" %>
       <%= link_to "Resume", resume_path, class: "item nav #{"active" if @page_name == "resume"}" %>
       <%= link_to "Portfolio", portfolio_path, class: "item nav #{"active" if @page_name == "portfolio"}" %>
@@ -21,4 +23,5 @@
       <%= link_to "Contact", contact_path, class: "item nav #{"active" if @page_name == "contact"}" %>
     </div>
   </div>
+</div>
 </div>

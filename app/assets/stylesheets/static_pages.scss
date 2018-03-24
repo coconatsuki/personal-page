@@ -17,6 +17,23 @@ $fushia: #732034;
   font-family: 'Joti One', cursive, georgia, serif;
 }
 
+@mixin nav-colors {
+  color: white;
+  background-color: $fushia;
+}
+
+@mixin important-nav-colors {
+  color: white !important;
+  background-color: $fushia !important;
+}
+
+@mixin nav-colors-hover {
+  &:hover {
+    background-color: #561827;
+    color: #F2F1F1;
+  }
+}
+
 // -------------------------Useful shortcuts -------------------------------\\
 
 .flex {
@@ -87,7 +104,7 @@ body {
 }
 
 .subtitles {
-  font-size: 2em !important;
+  font-size: 2em;
   font-family: 'Crimson Text', georgia, serif !important;
 }
 
@@ -103,38 +120,43 @@ p {
 
 .ui.tabular.menu.nav-links {
   padding: 0 2%;
-  background-color: $fushia;
-  color: white;
   border-color: #fff8f0;
-  height: 10%;
+  @include nav-colors;
 }
 
-.ui.tabular.menu .item.nav, #logo {
+#mobile-nav .ui.dropdown .ui.menu.colored-nav .item.nav {
+  @include important-nav-colors;
+}
+
+#mobile-nav .ui.dropdown .ui.menu.colored-nav .item.nav.active {
+  background-color: white !important;
+  color: $fushia !important;
+}
+
+.nav .ui.tabular.menu , #logo {
+   background-color: $fushia !important;
+   color: white;
+}
+
+.nav .ui.tabular.menu .item.nav {
   color: white;
-  &:hover {
-    background-color: #561827;
-    color: #F2F1F1;
-  }
+  @include nav-colors-hover;
 }
 
-.ui.tabular.menu .active.item.nav {
-  color: black;
-  &:hover {
-    background-color: #F2F1F1;
-    color: #6E1E1B;
-  }
+.nav .ui.tabular.menu .active.item.nav {
+  @include nav-colors;
 }
 
 #logo {
   font-size: 1.6em;
 }
 
-.ui.dropdown.mobile-nav {
+.ui.mobile-nav.menu.colored-nav {
   display: none;
 }
 
-@media screen and (max-width: 400px) {
-  .ui.dropdown.mobile-nav {
+@media screen and (max-width: 500px) {
+  #mobile-nav {
     display: flex;
   }
   .nav {
@@ -251,11 +273,6 @@ p {
   }
 }
 
-@media screen and (max-width: 400px) {
-  #logo {
-
-  }
-}
 //------------------------------- Home - news feed --------------------------\\
 
 .ui.column.grid.one.news-column #news-row {
@@ -284,6 +301,24 @@ p {
   width: 200px;
   margin: 0 auto 30px auto;
   font-size: 40px;
+}
+
+.ui.cards.grid.portfolio {
+  margin: 0;
+}
+
+.portfolio-page .ui.cards.grid.portfolio .card {
+  margin: 2% !important;
+}
+
+.portfolio.title h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio-page .ui.cards.grid.portfolio .card {
+    margin: 5% 0 !important;
+  }
 }
 
 // ------------------------------Resume page --------------------------------\\
@@ -316,7 +351,28 @@ p {
   margin: 8%;
 }
 
+.ui.stackable.cards.hobbies-cards, .ui.cards.grid.portfolio {
+  flex-wrap: wrap
+}
 
+@media screen and (max-width: 1050px) {
+  .ui.stackable.cards.hobbies-cards .card {
+    min-width: 28%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .small.travel.icon {
+    display: none;
+  }
+  .subtitles {
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .ui.stackable.cards.resume:first-child {
+    padding-top: 5%;
+  }
+}
 
 //------------------------------- About page ---------------------------------\\
 

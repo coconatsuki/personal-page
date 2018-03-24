@@ -10,6 +10,9 @@ $(document).on('turbolinks:load', function() {
   $('.ui.accordion')
     .accordion({exclusive: false});
 
+    $('.ui.dropdown')
+      .dropdown()
+    ;
 
 
 
