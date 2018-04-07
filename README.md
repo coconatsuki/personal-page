@@ -2,11 +2,10 @@
 
 To do :
 
-- Fixer les cards du portfolio (responsive)
-- Fixer menu dropdown de la nav (responsive)
+- Page contact à styliser, faire responsive.
+- Fixer les cards du portfolio (mettre à jour)
 - styliser les flash
 - javascript pour le form (ajax)
-- finir views de contact et about
 - pipeline heroku
 - papertrail (voir les logs)
 - rollbar

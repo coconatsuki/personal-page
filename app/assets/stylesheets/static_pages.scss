@@ -72,8 +72,6 @@ $fushia: #732034;
   font-family: 'Crimson Text', georgia, serif !important;
 }
 
-
-
 // ----------------------------- general -------------------------------------\\
 body {
   height: 100%;
@@ -120,8 +118,14 @@ p {
 
 .ui.tabular.menu.nav-links {
   padding: 0 2%;
+  // height: 12%;
   border-color: #fff8f0;
   @include nav-colors;
+}
+
+.nav .ui.tabular.menu .active.item.nav {
+  background-color: white;
+  color: $fushia;
 }
 
 #mobile-nav .ui.dropdown .ui.menu.colored-nav .item.nav {
@@ -131,6 +135,24 @@ p {
 #mobile-nav .ui.dropdown .ui.menu.colored-nav .item.nav.active {
   background-color: white !important;
   color: $fushia !important;
+}
+
+#menu-dropdown {
+  padding: 1.3%;
+  display: flex;
+}
+
+.menu-element {
+  width: 10%;
+}
+
+.menu-component {
+  text-align: center;
+  width: 100%;
+  border: 2px solid $fushia;
+  border-radius: 25%;
+  width: 70%;
+  margin: 8% auto;
 }
 
 .nav .ui.tabular.menu , #logo {
@@ -143,12 +165,9 @@ p {
   @include nav-colors-hover;
 }
 
-.nav .ui.tabular.menu .active.item.nav {
-  @include nav-colors;
-}
-
 #logo {
   font-size: 1.6em;
+  text-align: center;
 }
 
 .ui.mobile-nav.menu.colored-nav {
@@ -161,6 +180,9 @@ p {
   }
   .nav {
     display: none;
+  }
+  #logo {
+    padding: 1.5%;
   }
 }
 
@@ -183,6 +205,12 @@ p {
 
 .blog {
   color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .ui.footer.segment .ui.container .ui.stackable.grid .column.footer-column {
+     padding: 4% !important;
+  }
 }
 
 // ----------------------------- Home header -------------------------------------\\
@@ -338,8 +366,11 @@ p {
 }
 
 .ui.top.attached.header.resume-subtitle {
-  font-size: 2.2em;
+  font-size: 1.5em;
   text-align: center;
+  background-color: $fushia;
+  color: white;
+  opacity: 0.9;
 }
 
 .level {
@@ -384,6 +415,61 @@ p {
 .ui.segment.about-page {
   width: 800px;
   padding: 30px;
+}
+
+.content .header.subtitle {
+  font-size: 2.3em;
+  text-align: center;
+}
+
+.content p {
+  line-height: 1.6em;
+  text-align: center;
+  font-size: 1.05em;
+}
+
+#about-photo {
+  margin: 0 3% 3% 0;
+  border: 4px solid $fushia;
+  border-radius: 2.5%;
+}
+
+.first-subtitle-container {
+  margin-bottom: 2%;
+  width: 56%;
+  justify-content: space-around;
+}
+
+.second-subtitle {
+  margin-top: 4%;
+}
+
+@media screen and (max-width: 500px) {
+  .page-container.about-container {
+    background-color: white;
+    margin-top: 23%;
+  }
+  .ui.segment.about-page {
+    padding: 5% 2% 2% 2%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .page-container.about-container {
+    padding: 0;
+  }
+  .ui.segment.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-subtitle-container {
+    width: 100%;
+    margin: 3%;
+  }
+  #about-photo {
+    margin: 0;
+  }
 }
 
 // ----------------------------- Contact page --------------------------------\\

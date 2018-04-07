@@ -11,10 +11,12 @@
 
 <div class="ui fixed stackable menu colored-nav mobile-nav" id="mobile-nav">
   <%= link_to "Amandine Latour", root_path, id: "logo" %>
-<div class="ui dropdown">
-  <div class="text">
-    MENU
-    <i class="dropdown icon"></i></div>
+<div class="ui dropdown flex flex-column justify-center" id="menu-dropdown">
+  <div class="text menu-element flex flex-column">
+    <span class="flex menu-component"></span>
+    <span class="flex menu-component"></span>
+    <span class="flex menu-component"></span>
+  </div>
     <div class="ui menu nav-links align-center colored-nav">
       <%= link_to "Home", root_path, class: "item right nav #{"active" if @page_name == "home"}" %>
       <%= link_to "Resume", resume_path, class: "item nav #{"active" if @page_name == "resume"}" %>
