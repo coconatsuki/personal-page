@@ -110,6 +110,12 @@ p {
   font-family: 'Lato', "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 500px) {
+  .page-container {
+    margin-top: 25%;
+  }
+}
+
 // ----------------------------- nav -------------------------------------\\
 
 .nav {
@@ -326,14 +332,9 @@ p {
 
 //------------------------------- portfolio page -----------------------------\\
 
-.ui.special.stackable.cards.grid.portfolio {
-  margin: 0 50px;
-}
-
 .portfolio.title {
-  width: 200px;
-  margin: 0 auto 30px auto;
-  font-size: 40px;
+  margin: 0 auto 2% auto;
+  font-size: 3em;
 }
 
 .description.scrolling.content {
@@ -371,9 +372,22 @@ p {
   text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+    .portfolio-page .ui.cards.grid.portfolio .card {
+        max-width: 35%;
+        min-width: 40%;
+        margin: 5%;
+      }
+}
+
 @media screen and (max-width: 500px) {
   .portfolio-page .ui.cards.grid.portfolio .card {
     margin: 5% 0 !important;
+    max-width: 100%;
+  }
+  .short-presentation .presentation-text.ui.tall.stacked.segment,
+  .ui.tall.stacked.segment.salutationcol {
+    height: inherit;
   }
 }
 
@@ -507,12 +521,14 @@ p {
   width: 700px;
 }
 
-.contact-header {
+.contact-page .contact-header {
   h1 {
   margin: 0;
+  font-size: 2.5em;
   }
   h2 {
     font-size: 1.5em;
+    margin-top: 1%;
   }
 }
 
@@ -530,4 +546,10 @@ p {
   width: 60%;
   margin-top: 2%;
   align-self: center;
+}
+
+@media screen and (max-width: 500px) {
+  .ui.form .contact-form .contact-submit {
+      width: 70%;
+    }
 }
