@@ -9,50 +9,54 @@
         <div class="ui dimmer">
           <div class="content">
             <div class="center">
-              <div class="ui inverted button modal-button" data-modal="google-modal">See description</div>
+              <div class="ui inverted button modal-button" data-modal="tictactoe-modal">See description</div>
             </div>
           </div>
         </div>
-        <%= image_tag("fake-google-page.png") %>
+        <%= image_tag("tic-tac-toe.png") %>
       </div>
       <div class="content">
-        <a class="header">Fake Google homepage</a>
+        <a class="header">Tic Tac Toe</a>
         <div class="meta">
-          <span class="date">Created in Fev 2017</span>
+          <span class="date">Created in March 2018</span>
         </div>
         <div class="description">
-          Reproduction of the Canadian Google Homepage.
+          An simple Tic Tac Toe game built with webpack.
         </div>
       </div>
       <div class="extra content">
         <a>
           <i class="users icon"></i>
-          HTML5, CSS3
+          HTML5/CSS3, ES6, webpack, babel, ESLint
         </a>
       </div>
     </div>
-    <div class="ui modal" id="google-modal">
+    <div class="ui modal" id="tictactoe-modal">
       <i class="close icon"></i>
       <div class="header flex">
-        <span>Github link: <a href="https://coconatsuki.github.io/google_homepage/">HERE</a></span>
-        <span>To see it in the browser: <a href="https://github.com/coconatsuki/google_homepage">HERE</a></span>
+        <span>Github link: <a href="https://github.com/coconatsuki/tic-tac-toe-js">HERE</a></span>
       </div>
       <div class="image content">
         <div class="ui medium image">
-          <%= image_tag("fake-google-page.png") %>
+          <%= image_tag("tic-tac-toe.png") %>
         </div>
         <div class="description scrolling content">
-          <div class="ui header">Google Homepage</div>
-          <p>This project was my first opportunity to practice HTML5 and CSS3.</p>
-          <p>I put into practice everything I learnt in my HTML/CSS lessons,
-            and checked my ability to :</p>
-            <p>- Use two ways to move a div around on the page</p>
-            <p>- Stick a div onto the bottom or top of the page</p>
-            <p>- Identify the background color of an existing webpage</p>
-            <p>- Grab the URL for an image from an existing webpage</p>
-            <p>- Center an element horizontally</p>
-            <p>- Understand how to use classes and ids</p>
-            <p>- Build a very basic form (even if it doesn't "go" anywhere)</p>
+          <div class="ui header">Tic Tac Toe (JS)</div>
+          <p>This is a project from the online bootcamp "The Odin Project" to practice webpack.</p>
+          <p>
+            Instructions can be found: <a href="https://www.theodinproject.com/courses/javascript/lessons/tic-tac-toe-javascript">HERE</a>
+          </p>
+          <p>I also used this project as an opportunity to practice ES6 and ESLint.</p>
+            <p>It was the first time for me to use webpack and to install libraries through npm.</p>
+            <p>I also learnt how to use modules and export/import them.</p>
+            <p>This allowed me to have 4 different JS files : The main one (script.js), player.js, ui.js and board.js.</p>
+            <p>Each of them has a specific role:</p>
+            <p>- distributing tasks</p>
+            <p>-instanciate players</p>
+            <p>- take care of the user interface</p>
+            <p>- manage the grid</p>
+            <p>Result: cleaner code that respects the "Single Responsibility Principle"!</p>
+            <p></p>
           </div>
         </div>
       </div>
@@ -62,49 +66,46 @@
           <div class="ui dimmer">
             <div class="content">
               <div class="center">
-                <div class="ui inverted button modal-button" data-modal="mint-modal">See description</div>
+                <div class="ui inverted button modal-button" data-modal="newsweek-modal">See description</div>
               </div>
             </div>
           </div>
-          <%= image_tag("fake-mint-page.png") %>
+          <%= image_tag("newsweek.png") %>
         </div>
         <div class="content">
-          <a class="header">Fake Mint-com sign-in page</a>
+          <a class="header">Fake Newsweek page</a>
           <div class="meta">
-            <span class="date">Created in Dec 2017</span>
+            <span class="date">Created in Fev 2018</span>
           </div>
           <div class="description">
-            Reproduction of the Mint.com sign-in page, to practice forms.
+            Reproduction of a newsweek article to practice Responsive Design, Sass & Bootstrap.
           </div>
         </div>
         <div class="extra content">
           <a>
             <i class="users icon"></i>
-            HTML5, CSS3
+            HTML5/CSS3, Sass, Bootstrap
           </a>
         </div>
       </div>
-      <div class="ui modal" id="mint-modal">
+      <div class="ui modal" id="newsweek-modal">
         <i class="close icon"></i>
         <div class="header flex">
-          <span>Github link: <a href="https://github.com/coconatsuki/Fake-Mint.com">HERE</a></span>
-          <span>To see it in the browser: <a href="https://coconatsuki.github.io/Fake-Mint.com/">HERE</a></span>
+          <span>Github link: <a href="https://github.com/coconatsuki/newsweek-clone">HERE</a></span>
+          <span>To see it in the browser: <a href="https://coconatsuki.github.io/newsweek-clone/">HERE</a></span>
         </div>
         <div class="image content">
           <div class="ui medium image">
-            <%= image_tag("fake-mint-page.png") %>
+            <%= image_tag("newsweek.png") %>
           </div>
           <div class="description scrolling content">
-            <div class="ui header">Fake Mint.com sign-in page</div>
-            <p>This is a project from the online bootcamp "The Odin Project" to practice forms in HTML5 and CSS3.</p>
-            <p>Instructions can be found here : <a href="https://www.theodinproject.com/courses/html5-and-css3/lessons/html-forms?ref=lnav">The Odin-Project: html-forms</a>.</p>
-            <p>For this project, I had to rebuild the sign-in form made by the website mint.com :</p>
-            <p>
-              <a href="https://accounts.intuit.com/index.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Futm_medium%3Ddirect%26cta%3Dnav_login_dropdown">
-                Mint.com sign-in page</a>
-              </p>
-              <p>The design and simplicity of the page made it a good example to follow.</p>
-
+            <div class="ui header">Fake Newsweek article</div>
+            <p>This is a project from the online bootcamp "The Odin Project" to practice Responsive Design and Bootstrap</p>
+            <p>Instructions can be found: <a href="https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap">HERE.</a>.</p>
+            <p>And this is the original newsweek page: http://www.newsweek.com/</a>.</p>
+            <p>I added to this exercise the use of Sass (that I just learnt on CodeSchool => <a href="https://www.codeschool.com/">HERE</a>.</p>
+            <p>I was quite excited to discover how fast we can build using Bootstrap, and how useful Sass can be.</p>
+            <p>CSS becomes so much cleaner thanks to Sass !</p>
             </div>
           </div>
         </div>

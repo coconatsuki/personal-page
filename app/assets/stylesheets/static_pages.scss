@@ -277,6 +277,11 @@ p {
   @include box-shadow;
 }
 
+.short-presentation .presentation-text.ui.tall.stacked.segment,
+.ui.tall.stacked.segment.salutationcol {
+  height: 47%;
+}
+
 .presentation-text.ui.segment.tall {
   padding: 5% 3%;
 }
