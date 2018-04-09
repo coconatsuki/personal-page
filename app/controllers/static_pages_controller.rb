@@ -24,7 +24,7 @@ class StaticPagesController < ApplicationController
       flash[:warning] = "Please fill all the fields before sending a message."
       redirect_to contact_path
     else
-      ContactMailer.contact_mail(contact_params[:firstname], contact_params[:lastname], contact_params[:email], contact_params[:message]).deliver_now
+      ContactMailer.contact_mail(contact_params[:firstname], contact_params[:lastname], contact_params[:email], contact_params[:message]).deliver_later
       flash[:notice] = "Message sent!"
       redirect_to contact_path
     end
