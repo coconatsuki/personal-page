@@ -13,8 +13,8 @@ $fushia: #732034;
   border-radius: $radius;
 }
 
-@mixin joti-font {
-  font-family: "Joti One", cursive, georgia, serif;
+@mixin source-font {
+  font-family: "Source Sans Pro", sans-serif !important;
 }
 
 @mixin nav-colors {
@@ -73,6 +73,13 @@ $fushia: #732034;
 }
 
 // ----------------------------- general -------------------------------------\\
+
+html {
+  p {
+    @include source-font;
+  }
+}
+
 body {
   height: 100%;
   background-color: #f0f3f1 !important;
@@ -233,21 +240,14 @@ p {
   display: flex !important;
 }
 
-.salutation .hi {
-  font-size: 4.5em;
-  @include joti-font;
-  margin: 0;
-}
-
-.joti-font {
-  font-size: 2.5em;
-  @include joti-font;
-}
-
 .salutation.column {
   justify-content: space-around;
   .salutationcol {
     @include box-shadow;
+
+    p {
+      @include source-font;
+    }
   }
 }
 
@@ -287,27 +287,24 @@ p {
   @include box-shadow;
 }
 
-.short-presentation .presentation-text.ui.tall.stacked.segment,
-.ui.tall.stacked.segment.salutationcol {
-  height: 47%;
-}
-
 .presentation-text.ui.segment.tall {
   padding: 5% 3%;
 }
 
 .presentation-text.ui.segment.tall p,
 .introduction {
-  font-weight: bold;
   line-height: 1.7em;
+  font-size: 1.1rem;
+}
+
+.introduction.intro-title {
+  font-weight: 600 !important;
+  opacity: 0.8 !important;
 }
 
 @media screen and (max-width: 1050px) {
   .salutation .hi {
     font-size: 3em;
-  }
-  .joti-font {
-    font-size: 2em;
   }
   .photo-caption .header-name.title {
     font-size: 2.3em;
