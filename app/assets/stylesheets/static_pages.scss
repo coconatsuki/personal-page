@@ -1,20 +1,20 @@
 $fushia: #732034;
 
 @mixin box-shadow() {
-  -webkit-box-shadow: 7px 7px 35px -9px rgba(0,0,0,0.52);
-  -moz-box-shadow: 7px 7px 35px -9px rgba(0,0,0,0.52);
-  box-shadow: 7px 7px 35px -9px rgba(0,0,0,0.52);
+  -webkit-box-shadow: 7px 7px 35px -9px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 7px 7px 35px -9px rgba(0, 0, 0, 0.52);
+  box-shadow: 7px 7px 35px -9px rgba(0, 0, 0, 0.52);
 }
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
 
 @mixin joti-font {
-  font-family: 'Joti One', cursive, georgia, serif;
+  font-family: "Joti One", cursive, georgia, serif;
 }
 
 @mixin nav-colors {
@@ -30,7 +30,7 @@ $fushia: #732034;
 @mixin nav-colors-hover {
   &:hover {
     background-color: #561827;
-    color: #F2F1F1;
+    color: #f2f1f1;
   }
 }
 
@@ -48,7 +48,7 @@ $fushia: #732034;
   justify-content: center;
 }
 
-.justify-between  {
+.justify-between {
   justify-content: space-between;
 }
 
@@ -65,28 +65,28 @@ $fushia: #732034;
 }
 
 .lato-font {
-  font-family: 'Lato', "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif !important;
 }
 
 .crimson-font {
-  font-family: 'Crimson Text', georgia, serif !important;
+  font-family: "Crimson Text", georgia, serif !important;
 }
 
 // ----------------------------- general -------------------------------------\\
 body {
   height: 100%;
+  background-color: #f0f3f1 !important;
 }
 
 .ui.container.main {
-  margin: 3.5% 0;
+  margin: 20px 0;
   width: 85%;
   @include border-radius(5px);
-  background-color: rgba(186, 201, 136, 0.45);
 }
 
 .page-container {
   padding: 3% 3%;
-  margin-top: 8%
+  margin-top: 2%;
 }
 
 .big-icon {
@@ -98,16 +98,16 @@ body {
 
 .title {
   color: $fushia;
-  font-family: 'Crimson Text', georgia, serif;
+  font-family: "Crimson Text", georgia, serif;
 }
 
 .subtitles {
   font-size: 2em;
-  font-family: 'Crimson Text', georgia, serif !important;
+  font-family: "Crimson Text", georgia, serif !important;
 }
 
 p {
-  font-family: 'Lato', "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 500px) {
@@ -161,9 +161,10 @@ p {
   margin: 8% auto;
 }
 
-.nav .ui.tabular.menu , #logo {
-   background-color: $fushia !important;
-   color: white;
+.nav .ui.tabular.menu,
+#logo {
+  background-color: $fushia !important;
+  color: white;
 }
 
 .nav .ui.tabular.menu .item.nav {
@@ -195,14 +196,15 @@ p {
 //-------------------------------  Footer --------------------------------------\\
 
 .footer-header {
-   font-size: 1.4em !important;
- }
+  font-size: 1.4em !important;
+}
 
 .ui.vertical.footer.segment {
   background-color: $fushia;
 }
 
-.ui.inverted.link.list .item.footer-link, #fourmi {
+.ui.inverted.link.list .item.footer-link,
+#fourmi {
   color: #cdafb6;
   &:hover {
     color: white;
@@ -215,7 +217,7 @@ p {
 
 @media screen and (max-width: 500px) {
   .ui.footer.segment .ui.container .ui.stackable.grid .column.footer-column {
-     padding: 4% !important;
+    padding: 4% !important;
   }
 }
 
@@ -225,31 +227,33 @@ p {
   padding: 2%;
 }
 
-.profile.column, .salutation.column, .short-presentation.column {
+.profile.column,
+.salutation.column,
+.short-presentation.column {
   display: flex !important;
-  }
+}
 
 .salutation .hi {
-    font-size: 4.5em;
-    @include joti-font;
-    margin: 0;
-  }
+  font-size: 4.5em;
+  @include joti-font;
+  margin: 0;
+}
 
 .joti-font {
   font-size: 2.5em;
   @include joti-font;
 }
 
-  .salutation.column {
-    justify-content: space-around;
-    .salutationcol {
-      @include box-shadow;
-    }
+.salutation.column {
+  justify-content: space-around;
+  .salutationcol {
+    @include box-shadow;
   }
+}
 
 .ui.circular.segment.image {
-    border-color: #9e2b25;
-    @include box-shadow;
+  border-color: #9e2b25;
+  @include box-shadow;
 }
 
 .photo-caption {
@@ -292,9 +296,10 @@ p {
   padding: 5% 3%;
 }
 
-.presentation-text.ui.segment.tall p, .introduction {
-    font-weight: bold;
-    line-height: 1.7em;
+.presentation-text.ui.segment.tall p,
+.introduction {
+  font-weight: bold;
+  line-height: 1.7em;
 }
 
 @media screen and (max-width: 1050px) {
@@ -321,7 +326,8 @@ p {
   }
 }
 
-.item.news-items .content.news-content, .item.news-items .header {
+.item.news-items .content.news-content,
+.item.news-items .header {
   line-height: 1.8em !important;
 }
 
@@ -339,9 +345,9 @@ p {
 
 .description.scrolling.content {
   .ui.header {
-  text-align: center;
-  font-size: 2.3em;
-  text-decoration: underline;
+    text-align: center;
+    font-size: 2.3em;
+    text-decoration: underline;
   }
   p {
     margin-bottom: 0.5%;
@@ -373,11 +379,11 @@ p {
 }
 
 @media screen and (max-width: 800px) {
-    .portfolio-page .ui.cards.grid.portfolio .card {
-        max-width: 35%;
-        min-width: 40%;
-        margin: 5%;
-      }
+  .portfolio-page .ui.cards.grid.portfolio .card {
+    max-width: 35%;
+    min-width: 40%;
+    margin: 5%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -424,8 +430,9 @@ p {
   margin: 8%;
 }
 
-.ui.stackable.cards.hobbies-cards, .ui.cards.grid.portfolio {
-  flex-wrap: wrap
+.ui.stackable.cards.hobbies-cards,
+.ui.cards.grid.portfolio {
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1050px) {
@@ -523,8 +530,8 @@ p {
 
 .contact-page .contact-header {
   h1 {
-  margin: 0;
-  font-size: 2.5em;
+    margin: 0;
+    font-size: 2.5em;
   }
   h2 {
     font-size: 1.5em;
@@ -550,6 +557,6 @@ p {
 
 @media screen and (max-width: 500px) {
   .ui.form .contact-form .contact-submit {
-      width: 70%;
-    }
+    width: 70%;
+  }
 }
