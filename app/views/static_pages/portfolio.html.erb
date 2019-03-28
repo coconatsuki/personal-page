@@ -1,65 +1,161 @@
 <main class="portfolio-page page-container">
-  <h3 class="portfolio title flex justify-center">Front-end</h3>
+
+  <h3 class="portfolio title flex justify-center">Front and Back end</h3>
 
   <div class="ui divider"></div>
 
   <div class="ui special stackable cards grid portfolio flex justify-center">
     <div class="card five wide column left floated">
-      <div class="dimmable image">
-        <div class="ui dimmer">
+          <div class="dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button modal-button" data-modal="catbook-modal">See description</div>
+                </div>
+              </div>
+            </div>
+            <%= image_tag("odin-catbook.png") %>
+          </div>
           <div class="content">
-            <div class="center">
-              <div class="ui inverted button modal-button" data-modal="tictactoe-modal">See description</div>
+            <a class="header">CATBOOK</a>
+            <div class="meta">
+              <span class="date">March 2019</span>
+            </div>
+            <div class="description">
+              It's like Facebook, but for cats! <br /><br />You can create a profile with personal information, make friends, share news and photos with them, write comments and like or dislike your friends'posts.
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="users icon"></i>
+              HTML5/CSS3, React.js, StyledComponents, Ruby on Rails + Rspec tests, SQL, Webpacker, Cloudinary
+            </a>
+          </div>
+        </div>
+        <div class="ui modal" id="catbook-modal">
+          <i class="close icon"></i>
+          <div class="header flex">
+            <span>Github link: <a href="https://github.com/coconatsuki/odin-catbook">HERE</a></span>
+            <span>To see it in the browser: <a href="https://odin-catbook.herokuapp.com/">HERE</a></span>
+          </div>
+          <div class="image content">
+            <div class="ui medium image">
+              <%= image_tag("odin-catbook.png") %>
+            </div>
+            <div class="description scrolling content">
+              <div class="ui header">CATBOOK</div>
+              <p>This is a Facebook-like application, built with React.js and Ruby on Rails.</p>
+              <p>Every core features of Facebook are present : users, profiles, “friend requests”, posts with photos, comments, news feed, and “liking”.</p>
+              <p>I also used Devise for authentification and added Redis, Sidekiq, activeJob and Sendgrid to properly send emails in production.</p>
+              <p>All photos are uploaded on Cloudinary, and I use react-avatar-editor for cropping photos.</p>
+              <p>This project also helped me to deepen my knowledge of React.js, made me practice StyledComponents library, write complex SQL requests and practice my UI/UX skills.
+             </p>
             </div>
           </div>
         </div>
-        <%= image_tag("tic-tac-toe.png") %>
-      </div>
-      <div class="content">
-        <a class="header">Tic Tac Toe</a>
-        <div class="meta">
-          <span class="date">Created in March 2018</span>
-        </div>
-        <div class="description">
-          An simple Tic Tac Toe game built with webpack.
-        </div>
-      </div>
-      <div class="extra content">
-        <a>
-          <i class="users icon"></i>
-          HTML5/CSS3, ES6, webpack, babel, ESLint
-        </a>
-      </div>
-    </div>
-    <div class="ui modal" id="tictactoe-modal">
-      <i class="close icon"></i>
-      <div class="header flex">
-        <span>Github link: <a href="https://github.com/coconatsuki/tic-tac-toe-js">HERE</a></span>
-      </div>
-      <div class="image content">
-        <div class="ui medium image">
-          <%= image_tag("tic-tac-toe.png") %>
-        </div>
-        <div class="description scrolling content">
-          <div class="ui header">Tic Tac Toe (JS)</div>
-          <p>This is a project from the online bootcamp "The Odin Project" to practice webpack.</p>
-          <p>
-            Instructions can be found: <a href="https://www.theodinproject.com/courses/javascript/lessons/tic-tac-toe-javascript">HERE</a>
-          </p>
-          <p>I also used this project as an opportunity to practice ES6 and ESLint.</p>
-            <p>It was the first time for me to use webpack and to install libraries through npm.</p>
-            <p>I also learnt how to use modules and export/import them.</p>
-            <p>This allowed me to have 4 different JS files : The main one (script.js), player.js, ui.js and board.js.</p>
-            <p>Each of them has a specific role:</p>
-            <p>- distributing tasks</p>
-            <p>-instanciate players</p>
-            <p>- take care of the user interface</p>
-            <p>- manage the grid</p>
-            <p>Result: cleaner code that respects the "Single Responsibility Principle"!</p>
-            <p></p>
+
+    <div class="card five wide column left floated">
+          <div class="dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button modal-button" data-modal="novartem-modal">See description</div>
+                </div>
+              </div>
+            </div>
+            <%= image_tag("novartem.png") %>
+          </div>
+          <div class="content">
+            <a class="header">NOVARTEM</a>
+            <div class="meta">
+              <span class="date">2018 (still in progress)</span>
+            </div>
+            <div class="description">
+              A social media App for artists and craft persons <br /><br />You can create a profile, show and sell your work and create new connexions.
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="users icon"></i>
+              React.js, JavaScript (ES6), Jest/Enzyme, Node.js, GraphQL/Prisma, Flow, Amazon S3
+            </a>
           </div>
         </div>
-      </div>
+        <div class="ui modal" id="novartem-modal">
+          <i class="close icon"></i>
+          <div class="header flex">
+            <span>To see it in the browser: <a href="https://novartem.com/">HERE</a></span>
+          </div>
+          <div class="image content">
+            <div class="ui medium image">
+              <%= image_tag("novartem.png") %>
+            </div>
+            <div class="description scrolling content">
+              <div class="ui header">NOVARTEM</div>
+              <p>Novartem is a small canadian start up.</p>
+              <p>With my colleague and CTO, we built from scratch a social plateform for artists and craft persons.</p>
+              <p>Through this app, they could connect to each others, or to galleries, curators and clients.</p>
+              <p>They can show their pieces of work and even sell them.</p>
+              <p>As we were a very small team, I had the chance to work on every aspects of the projects, 
+              from the design to the Front-End and Back-end implementation, including the CI/CD process and deployment.</p>
+              <p>That was very enriching.</p>
+            </div>
+          </div>
+        </div>
+  </div>
+
+
+  <h3 class="portfolio title flex justify-center">Front-end only</h3>
+
+  <div class="ui divider"></div>
+
+  <div class="ui special stackable cards grid portfolio flex justify-center">
+    <div class="card five wide column left floated">
+          <div class="dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button modal-button" data-modal="todolist-modal">See description</div>
+                </div>
+              </div>
+            </div>
+            <%= image_tag("todo-list.png") %>
+          </div>
+          <div class="content">
+            <a class="header">TO DO LIST</a>
+            <div class="meta">
+              <span class="date">May 2018</span>
+            </div>
+            <div class="description">
+              A basic To do list<br /><br />This was mainly to practice React.js, as well as Bootstrap.
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="users icon"></i>
+              HTML5/CSS3, React.js, Bootstrap
+            </a>
+          </div>
+        </div>
+        <div class="ui modal" id="todolist-modal">
+          <i class="close icon"></i>
+          <div class="header flex">
+            <span>Github link: <a href="https://github.com/coconatsuki/todo-list-js">HERE</a></span>
+            <span>To see it in the browser: <a href="http://your-todo-list.surge.sh/">HERE</a></span>
+          </div>
+          <div class="image content">
+            <div class="ui medium image">
+              <%= image_tag("todo-list.png") %>
+            </div>
+            <div class="description scrolling content">
+              <div class="ui header">TO DO LIST</div>
+              <p>This is a basic To do list to practice React.js, Javascript ES6 and to get used to webpack, babel and ESLint configuration. </p>
+              <p>All data are stored in the localStorage.</p>
+              <p>It was my first time to use React, and I definitly love it.</p>
+            </div>
+          </div>
+        </div>
+
 
       <div class="card five wide column">
         <div class="dimmable image">
@@ -161,173 +257,7 @@
         </div>
       </div>
 
-      <div class="ui special stackable cards grid portfolio flex justify-center">
-        <div class="card five wide column left floated">
-          <div class="dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="ui inverted button modal-button" data-modal="pacman-modal">See description</div>
-                </div>
-              </div>
-            </div>
-            <%= image_tag("pacman.png") %>
-          </div>
-          <div class="content">
-            <a class="header">Miss Pacman</a>
-            <div class="meta">
-              <span class="date">Created in Fev 2017</span>
-            </div>
-            <div class="description">
-              Animated Miss Pacman character, all in CSS and jQuery.
-            </div>
-          </div>
-          <div class="extra content">
-            <a>
-              <i class="users icon"></i>
-              HTML5, CSS3, jQuery
-            </a>
-          </div>
-        </div>
-        <div class="ui modal" id="pacman-modal">
-          <i class="close icon"></i>
-          <div class="header flex">
-            <span>Github link: <a href="https://github.com/coconatsuki/miss_pacman">HERE</a></span>
-            <span>To see it in the browser: <a href="https://coconatsuki.github.io/miss_pacman/">HERE</a></span>
-          </div>
-          <div class="image content">
-            <div class="ui medium image">
-              <%= image_tag("pacman.png") %>
-            </div>
-            <div class="description scrolling content">
-              <div class="ui header">Animated Miss Pacman</div>
-              <p>This project is a personal one! And I had a lot of fun with it.</p>
-              <p>I wanted to practice the @keyframes rule, that I just learnt in a 'CodeSchool' course called 'adventures in web animation':</p>
-              <p><a href="https://www.codeschool.com/courses/adventures-in-web-animations">Codeschool: adventures-in-web-animation</a></p>
-              <p>It was really enjoyable to create a character in CSS and make it move with jQuery !</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card five wide column">
-          <div class="dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="ui inverted button modal-button" data-modal="drawing-modal">See description</div>
-                </div>
-              </div>
-            </div>
-            <%= image_tag("drawing.png") %>
-          </div>
-          <div class="content">
-            <a class="header">Sketchpad application</a>
-            <div class="meta">
-              <span class="date">Created in May 2017</span>
-            </div>
-            <div class="description">
-              A sketchpad application.
-            </div>
-          </div>
-          <div class="extra content">
-            <a>
-              <i class="users icon"></i>
-              HTML5, CSS3, JS
-            </a>
-          </div>
-        </div>
-        <div class="ui modal" id="drawing-modal">
-          <i class="close icon"></i>
-          <div class="header flex">
-            <span>Github link: <a href="https://github.com/coconatsuki/drawing-application">HERE</a></span>
-            <span>To see it in the browser: <a href="https://coconatsuki.github.io/drawing-application/">HERE</a></span>
-          </div>
-          <div class="image content">
-            <div class="ui medium image">
-              <%= image_tag("drawing.png") %>
-            </div>
-            <div class="description scrolling content">
-              <div class="ui header">Sketchpad application</div>
-              <p>This is a project from the online bootcamp 'The Odin Project' :</p>
-              <p><a href="https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project">The Odin Project: etch-a-sketch-project</a></p>
-              <p>Here, I had to create a browser version of something between a sketchpad and an Etch-A-Sketch.</p>
-              <p>This was a very good opportunity to practice my recent DOM manipulation skills.</p>
-              <p>The project wasn't easy, but made me learn a lot of JavaScript methods.</p>
-              <p>I also had a lot of fun with making a cool design in CSS.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card five wide column right floated">
-          <div class=" dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="ui inverted button modal-button" data-modal="pomodoro-modal">See description</div>
-                </div>
-              </div>
-            </div>
-            <%= image_tag("duckodoro.png") %>
-          </div>
-          <div class="content">
-            <a class="header">Pomodoro system</a>
-            <div class="meta">
-              <span class="date">Created in Jul 2017</span>
-            </div>
-            <div class="description">
-              A time management system to help you being productive and take breaks.
-            </div>
-          </div>
-          <div class="extra content">
-            <a>
-              <i class="users icon"></i>
-              HTML5, CSS3
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="ui modal" id="pomodoro-modal">
-        <i class="close icon"></i>
-        <div class="header flex">
-          <span>Github link: <a href="https://github.com/coconatsuki/pomodoro_system">HERE</a></span>
-          <span>To see it in the browser: <a href="https://coconatsuki.github.io/pomodoro_system/">HERE</a></span>
-        </div>
-        <div class="image content">
-          <div class="ui medium image">
-            <%= image_tag("duckodoro.png") %>
-          </div>
-          <div class="description scrolling content">
-            <div class="ui header">Pomodoro system</div>
-            <p>This is a project from the online bootcam 'Odin Project' :</p>
-            <p><a href="https://www.theodinproject.com/courses/web-development-101/lessons/pairing-project">The Odin Project: pairing-project</a></p>
-            <p>
-              Here, I had to create a 'time management system'
-              (called 'The Pomodoro Technique') application.
-              The Pomodoro Technique makes you work for a period of time,
-              then take a short break, then work for a period of time
-              then take a short break, and so on.
-            </p>
-            <p>
-              The goal was to have a first experience of pair programming.
-              So, I did this project with my partner,
-              who is a senior full stack developer.
-            </p>
-            <p>
-              I could learn a lot through pair programming,
-              and go further than what I would have done alone.
-            </p>
-            <p>
-              The design is quite ugly and doesn't look well on Firefox
-              (and maybe other browsers as well... I should fix it some day.)
-              but I had fun doing it.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="ui divider"></div>
-
-      <h3 class="portfolio title flex justify-center">Back-end</h3>
+      <h3 class="portfolio title flex justify-center">Back-end only</h3>
 
       <div class="ui divider"></div>
 
@@ -385,57 +315,6 @@
           </div>
         </div>
 
-        <div class="card five wide column left floated">
-          <div class="dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="ui inverted button modal-button" data-modal="catbook-modal">See description</div>
-                </div>
-              </div>
-            </div>
-            <%= image_tag("odin-catbook.png") %>
-          </div>
-          <div class="content">
-            <a class="header">CATBOOK</a>
-            <div class="meta">
-              <span class="date">Created in Dec 2017</span>
-            </div>
-            <div class="description">
-              It's like Facebook, but for cats (backend only)
-            </div>
-          </div>
-          <div class="extra content">
-            <a>
-              <i class="users icon"></i>
-              Ruby on Rails
-            </a>
-          </div>
-        </div>
-        <div class="ui modal" id="catbook-modal">
-          <i class="close icon"></i>
-          <div class="header flex">
-            <span>Github link: <a href="https://github.com/coconatsuki/odin-catbook">HERE</a></span>
-            <span>To see it in the browser: <a href="https://odin-catbook.herokuapp.com/">HERE</a></span>
-          </div>
-          <div class="image content">
-            <div class="ui medium image">
-              <%= image_tag("odin-catbook.png") %>
-            </div>
-            <div class="description scrolling content">
-              <div class="ui header">CATBOOK</div>
-              <p>This is a Facebook-like application, made with Ruby on Rails.</p>
-              <p>Catbook is an exercise from the online online bootcamp 'The Odin Project'. It's the final project that closes the Rails course:</p>
-              <p>
-                <a href="https://www.theodinproject.com/courses/ruby-on-rails/lessons/final-project?ref=lnav">The Odin Project: rails final project</a>
-              </p>
-              <p>Every core features of Facebook are present : users, profiles, “friending”, posts, news feed, and “liking”.</p>
-              <p>Besides, the project has the real Facebook sign-in option by using Omniauth and Devise.</p>
-              <p>It was the first time for me to try 'Devise' gem, and after having implemented sign-in and authentication systems by hand, I really appreciated to use it !</p>
-              <p>Finally, I also added Redis, Sidekiq, activeJob and Sendgrid to properly send emails in production.</p>
-            </div>
-          </div>
-        </div>
 
         <div class="card five wide column">
           <div class="dimmable image">
@@ -490,161 +369,6 @@
           </div>
         </div>
       </div>
-
-      <div class="ui special stackable cards grid portfolio flex justify-center">
-        <div class="card five wide column right floated">
-          <div class=" dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="ui inverted button modal-button" data-modal="secret-modal">See description</div>
-                </div>
-              </div>
-            </div>
-            <%= image_tag("secrethouse.png") %>
-          </div>
-          <div class="content">
-            <a class="header">The house of secrets</a>
-            <div class="meta">
-              <span class="date">Created in Oct 2017</span>
-            </div>
-            <div class="description">
-              A blog-like website with sign-up & authentication system made by hand.
-            </div>
-          </div>
-          <div class="extra content">
-            <a>
-              <i class="users icon"></i>
-              Ruby on Rails
-            </a>
-          </div>
-        </div>
-        <div class="ui modal" id="secret-modal">
-        <i class="close icon"></i>
-        <div class="header flex">
-          <span>Github link: <a href="https://github.com/coconatsuki/members-only-clubhouse">HERE</a></span>
-          <span>To see it in the browser: <a href="https://members-only-club.herokuapp.com">HERE</a></span>
-        </div>
-        <div class="image content">
-          <div class="ui medium image">
-            <%= image_tag("secrethouse.png") %>
-          </div>
-          <div class="description scrolling content">
-            <div class="ui header">The House of Secrets</div>
-            <p>This is an 'Odin Project exercise'. To see the instructions:</p>
-            <p>
-              <a href="https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication?ref=lnav">The Odin Project: authentication</a>
-            </p>
-            <p>The purpose is to practice the chapter about authentication :</p>
-            <p>I had to implement the log-in and authentication system by hand, using Session management, Cookies, Remember Token and helpful methods to manage the current user checks.</p>
-            <p>The trick then was to make sure that only signed in users can see the author of each post. If not signed in, they can only see the post contents.</p>
-            <p>It was also my first time to try and play around with Bootstrap.</p>
-          </div>
-        </div>
-      </div>
-
-        <div class="card five wide column left floated">
-          <div class="dimmable image">
-            <div class="ui dimmer">
-              <div class="content">
-                <div class="center">
-                  <div class="ui inverted button modal-button" data-modal="chess-modal">See description</div>
-                </div>
-              </div>
-            </div>
-            <%= image_tag("chessgame.png") %>
-          </div>
-          <div class="content">
-            <a class="header">Chess Game</a>
-            <div class="meta">
-              <span class="date">Created in Sept 2017</span>
-            </div>
-            <div class="description">
-              A chess application in commandline, for 2 players (no AI).
-            </div>
-          </div>
-          <div class="extra content">
-            <a>
-              <i class="users icon"></i>
-              Ruby
-            </a>
-          </div>
-        </div>
-        <div class="ui modal" id="chess-modal">
-          <i class="close icon"></i>
-          <div class="header flex">
-            <span>Github link: <a href="https://github.com/coconatsuki/Chess-game-in-ruby">HERE</a></span>
-          </div>
-          <div class="image content">
-            <div class="ui medium image">
-              <%= image_tag("chessgame.png") %>
-            </div>
-            <div class="description scrolling content">
-              <div class="ui header">Chess Game in commandline</div>
-              <p>This game was the most challenging of all of those I had to make so far.</p>
-              <p>It was the final project of the Ruby chapter. I had to gather in one game everything I learnt previously.</p>
-              <p>There's no IA here. It's a 2 real players game.</p>
-              <p>I had to be very organized and careful about keeping my classes modular and clean, and limiting my methods to do only one thing each.</p>
-              <p>I also had to think a lot about how to respect all the Chess rules (especially for the different moves patterns).</p>
-              <p>The most useful thing I learnt with this project was the Matrix building : it helped me a lot to make a grill, find the pieces in lines or diagonals, and to move them.</p>
-              <p>
-                Instructions can be found here :
-                <a href="https://www.theodinproject.com/courses/ruby-programming/lessons/ruby-final-project">The Odin Project: ruby final project</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card five wide column">
-            <div class="dimmable image">
-              <div class="ui dimmer">
-                <div class="content">
-                  <div class="center">
-                    <div class="ui inverted button modal-button" data-modal="game-modal">See description</div>
-                  </div>
-                </div>
-              </div>
-              <%= image_tag("games.png") %>
-            </div>
-            <div class="content">
-              <a class="header">4 Games</a>
-              <div class="meta">
-                <span class="date">Created in Aug 2017</span>
-              </div>
-              <div class="description">
-                Tic Tac Toe & Mastermind & Hangman & Connect five.
-              </div>
-            </div>
-            <div class="extra content">
-              <a>
-                <i class="users icon"></i>
-                Ruby
-              </a>
-            </div>
-          </div>
-          <div class="ui modal" id="game-modal">
-            <i class="close icon"></i>
-            <div class="header flex">
-              <span>Github link: <a href="https://github.com/coconatsuki/games-in-ruby">HERE</a></span>
-            </div>
-            <div class="image content">
-              <div class="ui medium image">
-                <%= image_tag("games.png") %>
-              </div>
-              <div class="description scrolling content">
-                <div class="ui header">Tic Tac Toe & Mastermind & Hangman & Connect five</div>
-                <p>Some of these games were made in TDD.</p>
-                <p>They where built while studying the 'Ruby Programming Chapter' on the Odin Project online bootcamp:</p>
-                <p><a href="https://www.theodinproject.com/courses/ruby-programming"></a>The Odin Project: ruby programming</p>
-                <p><a href="https://www.theodinproject.com/courses/ruby-programming/lessons/oop">The Tic Tac Toe Game:</a></p>
-                <p>It allowed me to learn more about 'Object Oriented Programming' and practice effectively. For example, I had to be careful not to share information between classes any more than I had to. It also helped me to get a better understanding of scopes. I also had to add some tests afterward (not in TDD).</p>
-                <p><a href="https://www.theodinproject.com/courses/ruby-programming/lessons/oop">The Mastermind:</a></p>
-                <p>This was one more chance to practice OOP even more. The interesting part here is that it's possible to reverse the roles : The user can either be the creator of the secret code or the guesser. Also, it was fun to experiment a bit of AI in trying to make the computer smarter (for example, if it guessed the right color but the wrong position, its next guess would include that color somewhere).</p>
-                <p><a href="https://www.theodinproject.com/courses/ruby-programming/lessons/file-i-o-and-serialization">The Hangman:</a></a></p>
-                <p>This one made me practice the interaction with files and serialization. A dictionnary file has to be read to generate a word, and the game offers the possibility of being saved and loaded.</p>
-                <p><a href="https://www.theodinproject.com/courses/ruby-programming/lessons/testing-ruby">The Connect five:</a></p>
-                <p>This was my first time to experiment strict TDD with Rspec.</p>
-              </div>
-            </div>
-          </div>
+      
         </div>
       </main>
