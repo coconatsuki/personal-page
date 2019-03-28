@@ -1,9 +1,9 @@
 $fushia: #732034;
 
 @mixin box-shadow() {
-  -webkit-box-shadow: 7px 7px 35px -9px rgba(0, 0, 0, 0.52);
-  -moz-box-shadow: 7px 7px 35px -9px rgba(0, 0, 0, 0.52);
-  box-shadow: 7px 7px 35px -9px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: 0px 7px 11px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 11px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 11px -2px rgba(0, 0, 0, 0.75);
 }
 
 @mixin border-radius($radius) {
@@ -82,7 +82,7 @@ html {
 
 body {
   height: 100%;
-  background-color: #f0f3f1 !important;
+  background-color: #eff5f1 !important;
 }
 
 .ui.container.main {
@@ -244,6 +244,7 @@ p {
   justify-content: space-around;
   .salutationcol {
     @include box-shadow;
+    border: 1px solid#9e2b25;
 
     p {
       @include source-font;
@@ -251,15 +252,24 @@ p {
   }
 }
 
+.profile-photo {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
 .ui.circular.segment.image {
-  border-color: #9e2b25;
+  border: 2px solid#9e2b25;
   @include box-shadow;
+  border-radius: 50%;
+  padding: 15px;
+  width: 70%;
 }
 
 .photo-caption {
   .header-name.title {
-    font-size: 2.5em;
-    margin-top: 5%;
+    font-size: 2.8em;
+    margin: 5% 0 0 0;
   }
 }
 
@@ -285,6 +295,7 @@ p {
 
 .short-presentation .presentation-text.ui.tall.stacked.segment {
   @include box-shadow;
+  border: 1px solid#9e2b25;
 }
 
 .presentation-text.ui.segment.tall {
@@ -299,7 +310,8 @@ p {
 
 .introduction.intro-title {
   font-weight: 600 !important;
-  opacity: 0.8 !important;
+  opacity: 0.7 !important;
+  font-size: 1.2rem !important;
 }
 
 @media screen and (max-width: 1050px) {
@@ -320,6 +332,7 @@ p {
   justify-content: space-around;
   .news-container {
     @include box-shadow;
+    width: 75%;
   }
 }
 
