@@ -1,9 +1,9 @@
 $fushia: #732034;
 
 @mixin box-shadow() {
-  -webkit-box-shadow: 0px 7px 11px -2px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 7px 11px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 7px 11px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 10px 5px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 10px 5px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 10px 5px -4px rgba(0, 0, 0, 0.75);
 }
 
 @mixin border-radius($radius) {
@@ -86,13 +86,13 @@ body {
 }
 
 .ui.container.main {
-  margin: 20px 0;
-  width: 85%;
+  // padding: 20px 10px;
+  width: 100%;
   @include border-radius(5px);
 }
 
 .page-container {
-  padding: 3% 3%;
+  padding: 3% 5%;
   margin-top: 2%;
 }
 
@@ -230,28 +230,56 @@ p {
 
 // ----------------------------- Home header -------------------------------------\\
 
+.home-page-container {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-home-row {
+  display: flex;
+  background-color: #212732;
+  padding-bottom: 30px;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 50%;
+  padding: 15px 15px 0 15px;
+}
+
+.presentation,
+.salutation {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
+  margin: 30px 0 0 0 !important;
+  @include box-shadow;
+}
+
+.left-picture {
+  background: url(homepage-background.jpg) no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
 .home-header.ui.three.column.grid {
   padding: 2%;
 }
 
-.profile.column,
-.salutation.column,
-.short-presentation.column {
-  display: flex !important;
-}
-
-.salutation.column {
-  justify-content: space-around;
-  .salutationcol {
-    @include box-shadow;
-
-    p {
-      @include source-font;
-    }
-  }
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 90%;
 }
 
 .profile-photo {
+  width: 35%;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -262,22 +290,24 @@ p {
   @include box-shadow;
   border-radius: 50%;
   padding: 15px;
-  width: 70%;
   margin-bottom: 15px;
 }
 
 .photo-caption {
   background-color: white;
   border-radius: 5px;
-  padding: 0 30px;
+  padding: 0 13%;
+  @include box-shadow;
+  border: 2px solid #732034;
 
   .header-name.title {
     font-size: 2.8em;
-    margin: 5% 0 0 0;
+    margin: 10px 0 0 0;
   }
 }
 
 .header-links {
+  margin: 0 0 10px 0;
   align-self: center;
   list-style: none;
   margin-top: 2%;
@@ -297,10 +327,6 @@ p {
   background: url(wordpress.png) no-repeat;
 }
 
-.short-presentation .presentation-text.ui.tall.stacked.segment {
-  @include box-shadow;
-}
-
 .presentation-text.ui.segment.tall {
   padding: 5% 3%;
 }
@@ -313,7 +339,7 @@ p {
 
 .introduction.intro-title {
   font-weight: 600 !important;
-  opacity: 0.7 !important;
+  opacity: 0.5 !important;
   font-size: 1.2rem !important;
 }
 
@@ -330,6 +356,12 @@ p {
 }
 
 //------------------------------- Home - news feed --------------------------\\
+
+.ui.piled.segment.news-container {
+  width: 75%;
+  align-self: center;
+  margin-bottom: 30px !important;
+}
 
 .ui.column.grid.one.news-column #news-row {
   justify-content: space-around;
