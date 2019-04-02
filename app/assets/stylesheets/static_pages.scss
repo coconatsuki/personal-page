@@ -390,10 +390,18 @@ p {
 
 //------------------------------- portfolio page -----------------------------\\
 
+.portfolio-page {
+  background-color: $navy;
+}
+
 .portfolio.title {
-  margin: 0 auto 2% auto;
   font-size: 3em;
-  color: $fushia;
+  font-size: 3em;
+  background-color: white;
+  border-radius: 5px;
+  justify-content: center;
+  width: 47%;
+  margin: 0 auto;
 }
 
 .description.scrolling.content {
@@ -457,6 +465,7 @@ p {
 }
 
 .resume-header {
+  border: 2px solid #732034;
   background-color: white;
   border-radius: 5px;
   display: flex;
@@ -464,6 +473,7 @@ p {
   justify-content: center;
   width: 47%;
   margin: 0 auto;
+  @include box-shadow();
 }
 
 .column.resume-column {
