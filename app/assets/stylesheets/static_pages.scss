@@ -400,8 +400,12 @@ p {
   background-color: white;
   border-radius: 5px;
   justify-content: center;
-  width: 47%;
-  margin: 0 auto;
+  width: 35%;
+  margin: 0px auto 30px auto;
+  padding: 10px;
+  border: 2px solid $fushia;
+  @include box-shadow;
+  letter-spacing: 0.03em;
 }
 
 .description.scrolling.content {
@@ -465,7 +469,7 @@ p {
 }
 
 .resume-header {
-  border: 2px solid #732034;
+  border: 2px solid $fushia;
   background-color: white;
   border-radius: 5px;
   display: flex;
@@ -473,7 +477,7 @@ p {
   justify-content: center;
   width: 47%;
   margin: 0 auto;
-  @include box-shadow();
+  @include box-shadow;
 }
 
 .column.resume-column {
@@ -486,6 +490,12 @@ p {
   padding: 10px;
   font-size: 40px;
   color: #6a1e2f;
+}
+
+.portfolio-subtitle {
+  color: #ccc7c7;
+  text-shadow: 0px 3px 6px black;
+  font-size: 2.5em;
 }
 
 .ui.horizontal.divider {
