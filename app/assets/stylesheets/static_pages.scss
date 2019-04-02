@@ -1,9 +1,10 @@
 $fushia: #732034;
+$navy: #212732;
 
 @mixin box-shadow() {
-  -webkit-box-shadow: -1px 10px 5px -4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 10px 5px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 10px 5px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 10px 5px -4px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: -1px 10px 5px -4px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: -1px 10px 5px -4px rgba(0, 0, 0, 0.75) !important;
 }
 
 @mixin border-radius($radius) {
@@ -238,7 +239,7 @@ p {
 
 .first-home-row {
   display: flex;
-  background-color: #212732;
+  background-color: $navy;
   padding-bottom: 30px;
 }
 
@@ -361,6 +362,12 @@ p {
   width: 75%;
   align-self: center;
   margin-bottom: 30px !important;
+  border: 1px solid $navy !important;
+}
+.ui.piled.segment.news-container::before,
+.ui.piled.segment.news-container::after {
+  border: 1px solid $navy !important;
+  background-color: $navy;
 }
 
 .ui.column.grid.one.news-column #news-row {
