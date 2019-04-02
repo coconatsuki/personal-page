@@ -82,7 +82,7 @@ html {
 
 body {
   height: 100%;
-  background-color: #ededed !important;
+  background-color: #b7bbb524 !important;
 }
 
 .ui.container.main {
@@ -263,9 +263,14 @@ p {
   border-radius: 50%;
   padding: 15px;
   width: 70%;
+  margin-bottom: 15px;
 }
 
 .photo-caption {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 30px;
+
   .header-name.title {
     font-size: 2.8em;
     margin: 5% 0 0 0;
@@ -349,6 +354,7 @@ p {
 .portfolio.title {
   margin: 0 auto 2% auto;
   font-size: 3em;
+  color: $fushia;
 }
 
 .description.scrolling.content {
@@ -407,21 +413,34 @@ p {
 
 // ------------------------------Resume page --------------------------------\\
 
+.resume-header {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47%;
+  margin: 0 auto;
+}
+
 .column.resume-column {
   display: flex;
   justify-content: center;
 }
 
 .resume-title {
-  padding-bottom: 2%;
+  margin-top: 0;
+  padding: 10px;
   font-size: 40px;
+  color: #6a1e2f;
 }
 
 .ui.horizontal.divider {
   margin: 3%;
+  margin-bottom: 10px;
 }
 
 .ui.top.attached.header.resume-subtitle {
+  margin-top: 0;
   font-size: 1.5em;
   text-align: center;
   background-color: $fushia;
@@ -434,8 +453,22 @@ p {
   font-size: initial;
 }
 
+.subtitles-div {
+  margin: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
 .subtitles {
-  margin: 8%;
+  margin: 0 20px;
+  color: black;
+}
+
+.small.travel.icon {
+  color: black;
+  font-size: 1em;
 }
 
 .ui.stackable.cards.hobbies-cards,
@@ -470,8 +503,8 @@ p {
 }
 
 .ui.segment.about-page {
-  width: 800px;
   padding: 30px;
+  width: 90%;
 }
 
 .content .header.subtitle {
@@ -481,7 +514,6 @@ p {
 
 .content .meta p {
   line-height: 1.6em;
-  text-align: center;
   font-size: 1.05em;
 }
 
