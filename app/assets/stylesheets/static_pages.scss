@@ -452,7 +452,12 @@ p {
 
 // ------------------------------Resume page --------------------------------\\
 
+.resume-page {
+  background-color: $navy;
+}
+
 .resume-header {
+  background-color: white;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -502,12 +507,14 @@ p {
 
 .subtitles {
   margin: 0 20px;
-  color: black;
+  color: #ccc7c7;
+  text-shadow: 0px 3px 6px black;
 }
 
 .small.travel.icon {
-  color: black;
+  color: #ccc7c7;
   font-size: 1em;
+  text-shadow: 0px 3px 6px black;
 }
 
 .ui.stackable.cards.hobbies-cards,
