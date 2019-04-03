@@ -248,7 +248,7 @@ p {
   flex-direction: column;
   margin-top: 20px;
   width: 50%;
-  padding: 15px 15px 0 15px;
+  padding: 15px 20px 0 20px;
 }
 
 .presentation,
@@ -265,6 +265,9 @@ p {
   background: url(homepage-background.jpg) no-repeat;
   background-size: cover;
   width: 50%;
+  -webkit-box-shadow: inset -9px 0px 19px 0px rgba(33, 39, 50, 1);
+  -moz-box-shadow: inset -9px 0px 19px 0px rgba(33, 39, 50, 1);
+  box-shadow: inset -9px 0px 19px 0px rgba(33, 39, 50, 1);
 }
 
 .home-header.ui.three.column.grid {
