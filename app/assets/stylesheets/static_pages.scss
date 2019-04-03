@@ -262,7 +262,7 @@ p {
 }
 
 .left-picture {
-  background: url(homepage-background.jpg) no-repeat;
+  background: image-url("homepage-background.jpg") no-repeat;
   background-size: cover;
   width: 50%;
   -webkit-box-shadow: inset -9px 0px 19px 0px rgba(33, 39, 50, 1);
@@ -320,15 +320,15 @@ p {
 }
 
 #github {
-  background: url(github-plus.png) no-repeat;
+  background: image-url("github-plus.png") no-repeat;
 }
 
 #linkedin {
-  background: url(linkedin.png) no-repeat;
+  background: image-url("linkedin.png") no-repeat;
 }
 
 #wordpress {
-  background: url(wordpress.png) no-repeat;
+  background: image-url("wordpress.png") no-repeat;
 }
 
 .presentation-text.ui.segment.tall {
@@ -403,31 +403,31 @@ p {
 }
 
 .catbook-image {
-  background: url(odin-catbook.png) no-repeat !important;
+  background: image-url("odin-catbook.png") no-repeat !important;
 }
 
 .novartem-image {
-  background: url(novartem.png) no-repeat !important;
+  background: image-url("novartem.png") no-repeat !important;
 }
 
 .todolist-image {
-  background: url(todo-list.png) no-repeat !important;
+  background: image-url("todo-list.png") no-repeat !important;
 }
 
 .newsweek-image {
-  background: url(newsweek.png) no-repeat !important;
+  background: image-url("newsweek.png") no-repeat !important;
 }
 
 .newyork-image {
-  background: url(fake-newyork-page.png) no-repeat !important;
+  background: image-url("fake-newyork-page.png") no-repeat !important;
 }
 
 .bixis-image {
-  background: url(bixis.png) no-repeat !important;
+  background: image-url("bixis.png") no-repeat !important;
 }
 
 .flightbooker-image {
-  background: url(flight-booker.png) no-repeat !important;
+  background: image-url("flight-booker.png") no-repeat !important;
 }
 
 .portfolio-page {
@@ -911,7 +911,7 @@ i {
   margin-left: -20px;
   width: 40px;
   height: 60px; /*change with size of arrow to make sit on bottom */
-  /*   background-image: url(); */
+  /*   background-image: image-url(""); */
   /*   background-size: contain; */
 }
 
