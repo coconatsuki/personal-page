@@ -390,6 +390,43 @@ p {
 
 //------------------------------- portfolio page -----------------------------\\
 
+.dimmable.image.intro-image {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain !important;
+  background-position: center !important;
+}
+
+.catbook-image {
+  background: url(odin-catbook.png) no-repeat !important;
+}
+
+.novartem-image {
+  background: url(novartem.png) no-repeat !important;
+}
+
+.todolist-image {
+  background: url(todo-list.png) no-repeat !important;
+}
+
+.newsweek-image {
+  background: url(newsweek.png) no-repeat !important;
+}
+
+.newyork-image {
+  background: url(fake-newyork-page.png) no-repeat !important;
+}
+
+.bixis-image {
+  background: url(bixis.png) no-repeat !important;
+}
+
+.flightbooker-image {
+  background: url(flight-booker.png) no-repeat !important;
+}
+
 .portfolio-page {
   background-color: $navy;
 }
@@ -437,6 +474,7 @@ p {
 .portfolio-page .ui.cards.grid.portfolio .card {
   margin: 2%;
   max-width: 28%;
+  @include box-shadow;
 }
 
 .portfolio.title h3 {
@@ -563,6 +601,10 @@ p {
 
 //------------------------------- About page ---------------------------------\\
 
+.about-page-container {
+  background-color: $navy;
+}
+
 .about-container {
   display: flex;
   justify-content: space-evenly;
@@ -571,6 +613,10 @@ p {
 .ui.segment.about-page {
   padding: 30px;
   width: 90%;
+}
+
+.about-content {
+  padding: 0 10px;
 }
 
 .content .header.subtitle {
@@ -583,20 +629,27 @@ p {
   font-size: 1.05em;
 }
 
+.first-about-row {
+  margin-bottom: 20px;
+}
+
 #about-photo {
-  margin: 0 3% 3% 0;
+  margin-right: 30px;
+  margin-bottom: 0;
   border: 4px solid $fushia;
   border-radius: 2.5%;
+  width: 45%;
+  @include box-shadow;
 }
 
 .first-subtitle-container {
-  margin-bottom: 2%;
   width: 56%;
   justify-content: space-around;
+  margin: 0 auto 25px auto;
 }
 
 .second-subtitle {
-  margin-top: 4%;
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 500px) {
