@@ -124,6 +124,12 @@ p {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .ui.container.all-pages-container {
+    margin: 0 !important;
+  }
+}
+
 // ----------------------------- nav -------------------------------------\\
 
 .nav {
@@ -436,13 +442,11 @@ p {
 
 .portfolio.title {
   font-size: 3em;
-  font-size: 3em;
   background-color: white;
   border-radius: 5px;
   justify-content: center;
-  width: 35%;
   margin: 0px auto 30px auto;
-  padding: 10px;
+  padding: 10px 50px;
   border: 2px solid $fushia;
   @include box-shadow;
   letter-spacing: 0.03em;
@@ -615,7 +619,7 @@ p {
 
 .ui.segment.about-page {
   padding: 30px;
-  width: 90%;
+  width: 80%;
 }
 
 .about-content {
@@ -632,27 +636,28 @@ p {
   font-size: 1.05em;
 }
 
-.first-about-row {
-  margin-bottom: 20px;
-}
-
 #about-photo {
   margin-right: 30px;
   margin-bottom: 0;
   border: 4px solid $fushia;
   border-radius: 2.5%;
-  width: 45%;
+  width: 70%;
   @include box-shadow;
 }
 
 .first-subtitle-container {
-  width: 56%;
   justify-content: space-around;
-  margin: 0 auto 25px auto;
+  margin-bottom: 25px;
 }
 
-.second-subtitle {
-  margin-top: 25px;
+.last-paragraph {
+  margin-bottom: 0 !important;
+}
+
+.second-subtitle,
+.third-subtitle {
+  margin-top: 40px !important;
+  margin-bottom: 25px !important;
 }
 
 @media screen and (max-width: 500px) {
@@ -665,10 +670,10 @@ p {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .page-container.about-container {
-    padding: 0;
-  }
+@media screen and (max-width: 900px) {
+  // .page-container.about-container {
+  //   padding: 0 !important;
+  // }
   .ui.segment.about-page {
     display: flex;
     flex-direction: column;
@@ -680,6 +685,57 @@ p {
   }
   #about-photo {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #about-photo {
+    width: 75% !important;
+    height: 100%;
+    margin-right: 20px;
+  }
+  .ui.segment.about-page {
+    width: 90%;
+    padding: 20px;
+  }
+  .second-subtitle,
+  .third-subtitle {
+    margin-top: 25px !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .page-container {
+    margin-top: 0 !important;
+  }
+  .about-page {
+    margin-top: 30px !important;
+  }
+  .about-page-container {
+    padding: 45px 0 !important;
+  }
+  .ui.segment.about-page {
+    width: 95% !important;
+  }
+  #about-photo {
+    width: 145% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-page-container {
+    margin-bottom: 20px;
+  }
+
+  .ui.segment.about-page {
+    width: 100% !important;
+    .first-about-row {
+      flex-direction: column;
+    }
+    #about-photo {
+      width: 80% !important;
+    }
   }
 }
 
