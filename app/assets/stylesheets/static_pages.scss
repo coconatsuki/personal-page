@@ -94,7 +94,7 @@ body {
 
 .page-container {
   padding: 3% 5%;
-  margin-top: 2%;
+  margin-top: 30px !important;
 }
 
 .big-icon {
@@ -118,14 +118,14 @@ p {
   font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-@media screen and (max-width: 500px) {
-  .page-container {
-    margin-top: 25%;
-  }
-}
+// @media screen and (max-width: 500px) {
+//   .page-container {
+//     margin-top: 16% !important;
+//   }
+// }
 
-@media only screen and (max-width: 767px) {
-  .ui.container.all-pages-container {
+@media screen and (max-width: 800px) {
+  .ui.container.main.all-pages-container {
     margin: 0 !important;
   }
 }
@@ -271,9 +271,9 @@ p {
   background: image-url("homepage-background.jpg") no-repeat;
   background-size: cover;
   width: 50%;
-  -webkit-box-shadow: inset -9px 0px 19px 0px rgba(33, 39, 50, 1);
-  -moz-box-shadow: inset -9px 0px 19px 0px rgba(33, 39, 50, 1);
-  box-shadow: inset -9px 0px 19px 0px rgba(33, 39, 50, 1);
+  -webkit-box-shadow: inset -11px -11px 14px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset -11px -11px 14px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -11px -11px 14px -4px rgb(33, 39, 50);
 }
 
 .home-header.ui.three.column.grid {
@@ -365,6 +365,19 @@ p {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .left-picture {
+    display: none;
+  }
+  .text-column {
+    width: 100%;
+    padding: 25px 5px 0 5px;
+  }
+  .ui.piled.segment.news-container.news-container {
+    width: 93%;
+  }
+}
+
 //------------------------------- Home - news feed --------------------------\\
 
 .ui.piled.segment.news-container {
@@ -446,7 +459,7 @@ p {
   border-radius: 5px;
   justify-content: center;
   margin: 0px auto 30px auto;
-  padding: 10px 50px;
+  padding: 10px 80px;
   border: 2px solid $fushia;
   @include box-shadow;
   letter-spacing: 0.03em;
@@ -488,11 +501,20 @@ p {
   text-align: center;
 }
 
+@media screen and (max-width: 1400px) {
+  .all-pages-container .portfolio-page.page-container {
+    padding-top: 45px !important;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .portfolio-page .ui.cards.grid.portfolio .card {
     max-width: 35%;
     min-width: 40%;
     margin: 5%;
+  }
+  .all-pages-container .portfolio-page.page-container {
+    padding-top: 30px !important;
   }
 }
 
@@ -517,10 +539,10 @@ p {
   border: 2px solid $fushia;
   background-color: white;
   border-radius: 5px;
+  padding: 10px 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 47%;
   margin: 0 auto;
   @include box-shadow;
 }
@@ -532,7 +554,6 @@ p {
 
 .resume-title {
   margin-top: 0;
-  padding: 10px;
   font-size: 40px;
   color: #6a1e2f;
 }
@@ -671,9 +692,6 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-  // .page-container.about-container {
-  //   padding: 0 !important;
-  // }
   .ui.segment.about-page {
     display: flex;
     flex-direction: column;
@@ -696,7 +714,7 @@ p {
   }
   .ui.segment.about-page {
     width: 90%;
-    padding: 20px;
+    padding: 5px 20px;
   }
   .second-subtitle,
   .third-subtitle {
@@ -706,12 +724,6 @@ p {
 }
 
 @media screen and (max-width: 1050px) {
-  .page-container {
-    margin-top: 0 !important;
-  }
-  .about-page {
-    margin-top: 30px !important;
-  }
   .about-page-container {
     padding: 45px 0 !important;
   }
@@ -724,10 +736,6 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-  .about-page-container {
-    margin-bottom: 20px;
-  }
-
   .ui.segment.about-page {
     width: 100% !important;
     .first-about-row {
@@ -735,6 +743,10 @@ p {
     }
     #about-photo {
       width: 80% !important;
+    }
+    .ui.segment.about-page {
+      width: 90%;
+      padding: 5px 10px;
     }
   }
 }
@@ -776,8 +788,8 @@ p {
 .ui.form .contact-form .contact-submit.submit.button {
   align-self: center;
   margin-top: 20px;
-  width: 30%;
   font-size: 1.3rem;
+  width: 30%;
   padding: 10px 0;
   text-shadow: 0px 1px 0px #263666;
   border-radius: 5px;
@@ -825,6 +837,30 @@ p {
   &:active {
     position: relative;
     top: 1px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page-container.contact-page-container {
+    padding-top: 35px;
+  }
+  .ui.segment.contact-page {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact-header h1 {
+    font-size: 2em;
+  }
+  .contact-header h3 {
+    font-size: 1.3em;
+  }
+  .page-container.contact-page-container {
+    padding: 55px 5px 20px 5px;
+  }
+  .ui.form .contact-form .contact-submit.submit.button {
+    width: 60%;
   }
 }
 
