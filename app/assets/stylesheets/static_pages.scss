@@ -421,6 +421,22 @@ p {
   background-position: center !important;
 }
 
+.description-image {
+  max-width: 50% !important;
+}
+
+.ui.header.description-title {
+  font-size: 1.9em !important;
+}
+
+.etruck-image {
+  background: image-url("etruck-1.jpg") no-repeat !important;
+}
+
+.apameo-image {
+  background: image-url("apameo-1.png") no-repeat !important;
+}
+
 .catbook-image {
   background: image-url("odin-catbook.png") no-repeat !important;
 }

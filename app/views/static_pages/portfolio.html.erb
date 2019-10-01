@@ -9,6 +9,98 @@
   <div class="ui divider"></div>
 
   <div class="ui special stackable cards grid portfolio flex justify-center">
+
+   <div class="card five wide column left floated">
+          <div class="dimmable image intro-image etruck-image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button modal-button" data-modal="etruck-modal">See description</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <a class="header">e-Truck</a>
+            <div class="meta">
+              <span class="date">August 2019</span>
+            </div>
+            <div class="description">
+              A car dashboard for tablets <br /><br />It allows you to check the state of your car, and manipulate various options in it.
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="users icon"></i>
+              HTML5/CSS3, Javascript
+            </a>
+          </div>
+        </div>
+        <div class="ui modal" id="etruck-modal">
+          <i class="close icon"></i>
+          <div class="header flex">
+            <span>App not yet available on the web</span>
+          </div>
+          <div class="image content">
+            <div class="ui description-image image">
+              <%= image_tag("etruck-2.jpg") %>
+            </div>
+            <div class="description scrolling content">
+              <div class="ui header description-title">E-TRUCK</div>
+              <p>I had to implement the Front-End of 20 pages.</p>
+              <p>The most tricky part was to render all the pages responsive (in a very detailed way) for all different tablet formats.</p>
+              <p>Apart from mere HTML5 and CSS3, I also did some features and animations using Javascript.</p>
+             </p>
+            </div>
+          </div>
+        </div>
+
+ <div class="card five wide column left floated">
+          <div class="dimmable image intro-image apameo-image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button modal-button" data-modal="apameo-modal">See description</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <a class="header">Apameo - dentist templates</a>
+            <div class="meta">
+              <span class="date">August 2019</span>
+            </div>
+            <div class="description">
+              Websites templates intended for dentists. <br /><br />Implementation of different website templates tailor-made for dentists and other medical specialists.
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="users icon"></i>
+              HTML5/CSS3/Javascript, Bootstrap, erb, Ruby on Rails + Rspec tests
+            </a>
+          </div>
+        </div>
+        <div class="ui modal" id="apameo-modal">
+          <i class="close icon"></i>
+          <div class="header flex">
+            <span>See the Apameo demo-page: <a href="www.apameo-demo.com/">HERE</a></span>
+          </div>
+          <div class="image content">
+            <div class="ui description-image image">
+              <%= image_tag("apameo-3.png") %>
+            </div>
+            <div class="description scrolling content">
+              <div class="ui header description-title">APAMEO - dentist templates</div>
+              <p>I integrated some Bootstrap templates into Apameo App, and made them dynamic using erb.</p>
+              <p>I had to re-design some parts, and add some additional features as well.</p>
+              <p>These different templates allows Apameo to propose different designs to dentists or other medical specialists.</p>
+              <p>After choosing the design and features they want, they just have to provide the content that will be dynamically rendered in the pages.</p>
+             </p>
+            </div>
+          </div>
+        </div>
+
     <div class="card five wide column left floated">
           <div class="dimmable image intro-image catbook-image">
             <div class="ui dimmer">
@@ -42,11 +134,11 @@
             <span>To see it in the browser: <a href="https://odin-catbook.herokuapp.com/">HERE</a></span>
           </div>
           <div class="image content">
-            <div class="ui medium image">
+            <div class="ui description-image image">
               <%= image_tag("odin-catbook.png") %>
             </div>
             <div class="description scrolling content">
-              <div class="ui header">CATBOOK</div>
+              <div class="ui header description-title">CATBOOK</div>
               <p>This is a Facebook-like application, built with React.js and Ruby on Rails.</p>
               <p>Every core features of Facebook are present : users, profiles, “friend requests”, posts with photos, comments, news feed, and “liking”.</p>
               <p>I also used Devise for authentification and added Redis, Sidekiq, activeJob and Sendgrid to properly send emails in production.</p>
@@ -89,11 +181,11 @@
             <span>To see it in the browser: <a href="https://novartem.com/">HERE</a></span>
           </div>
           <div class="image content">
-            <div class="ui medium image">
+            <div class="ui description-image image">
               <%= image_tag("novartem.png") %>
             </div>
             <div class="description scrolling content">
-              <div class="ui header">NOVARTEM</div>
+              <div class="ui header description-title">NOVARTEM</div>
               <p>Novartem is a small canadian start up.</p>
               <p>With my colleague and CTO, we built from scratch a social plateform for artists and craft persons.</p>
               <p>Through this app, they could connect to each others, or to galleries, curators and clients.</p>
@@ -145,11 +237,11 @@
             <span>To see it in the browser: <a href="http://your-todo-list.surge.sh/">HERE</a></span>
           </div>
           <div class="image content">
-            <div class="ui medium image">
+            <div class="ui description-image image">
               <%= image_tag("todo-list.png") %>
             </div>
             <div class="description scrolling content">
-              <div class="ui header">TO DO LIST</div>
+              <div class="ui header description-title">TO DO LIST</div>
               <p>This is a basic To do list to practice React.js, Javascript ES6 and to get used to webpack, babel and ESLint configuration. </p>
               <p>All data are stored in the localStorage.</p>
               <p>It was my first time to use React, and I definitly love it.</p>
@@ -191,11 +283,11 @@
           <span>To see it in the browser: <a href="https://coconatsuki.github.io/newsweek-clone/">HERE</a></span>
         </div>
         <div class="image content">
-          <div class="ui medium image">
+          <div class="ui description-image image">
             <%= image_tag("newsweek.png") %>
           </div>
           <div class="description scrolling content">
-            <div class="ui header">Fake Newsweek article</div>
+            <div class="ui header description-title">Fake Newsweek article</div>
             <p>This is a project from the online bootcamp "The Odin Project" to practice Responsive Design and Bootstrap</p>
             <p>Instructions can be found: <a href="https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap">HERE.</a>.</p>
             <p>And this is the original newsweek page: http://www.newsweek.com/</a>.</p>
@@ -240,11 +332,11 @@
           <span>To see it in the browser: <a href="https://coconatsuki.github.io/fake-new-york-times-article/">HERE</a></span>
         </div>
         <div class="image content">
-          <div class="ui medium image">
+          <div class="ui description-image image">
             <%= image_tag("fake-newyork-page.png") %>
           </div>
           <div class="description scrolling content">
-            <div class="ui header">Fake New York Times article</div>
+            <div class="ui header description-title">Fake New York Times article</div>
             <p><a href="https://www.theodinproject.com/courses/html5-and-css3/lessons/positioning-and-floating-elements">The Odin Project: positioning-and-floating elements</a></p>
             <p>This was meant to practice the HTML5 new semantics, and also positioning and floating elements.</p>
             <p>I could also practice flexbox, as well as images and videos integration.</p>
@@ -294,11 +386,11 @@
             <span>To see it in the browser: <a href="https://bixi-fx-innovation.herokuapp.com/">HERE</a></span>
           </div>
           <div class="image content">
-            <div class="ui medium image">
+            <div class="ui description-image image">
               <%= image_tag("bixis.png") %>
             </div>
             <div class="description scrolling content">
-              <div class="ui header">Bixis application </div>
+              <div class="ui header description-title">Bixis application </div>
               <p>This application was made for a technical test. Here are the instructions :</p>
               <p>
                 - Make an app that checks the availability of bixis (bikes for share) at the closest stations (from the Office which sent me the test).
@@ -347,11 +439,11 @@
             <span>To see it in the browser: <a href="https://odin-flight-booking.herokuapp.com">HERE</a></span>
           </div>
           <div class="image content">
-            <div class="ui medium image">
+            <div class="ui description-image image">
               <%= image_tag("flight-booker.png") %>
             </div>
             <div class="description scrolling content">
-              <div class="ui header">Flight booker</div>
+              <div class="ui header description-title">Flight booker</div>
               <p>This project is part of the online formation "The Odin Project":</p>
               <p>
                 Follow the link for instructions : <a href="https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-advanced-forms?ref=lnav">The Odin Project: building advanced forms</a>
